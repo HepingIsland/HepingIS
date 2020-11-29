@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>test</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='test.css'>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/balloon-css/balloon.min.css">
+</head>
+<body>
+    <div class="largetitle">和平島<br>&nbsp&nbsp&nbsp&nbsp數位圖像<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp故事館</div>
+    <div class="lamp"><img src="lamp.png" alt="檯燈" ></div>
+    <div class="scrollbtn"><img src="scroll.png" alt="卷軸"></div>
+    <div id="drawContainer"></div>
+    <div id="muralContainer"></div>
+    <div class="lampcontroll"></div>
+    <ul class="menu">
+        <li id="push">
+            <span>
+                說明
+            </span>
+        </li>
+        <li id="pushed-right-1">
+          <span aria-label="點擊檯燈讓讓房間變亮" data-balloon-pos="up" class="tooltip-big-text" id="pr1">
+            檯燈
+          </span>
+        </li>
+        <li id="pushed-right-2">
+          <span aria-label="滑鼠在宣紙上進行作畫" data-balloon-pos="down" class="tooltip-big-text" id="pr2">
+            宣紙
+          </span>
+        </li>
+        <li id="pushed-right-3">
+          <span aria-label="點擊並拖曳為壁畫上色" data-balloon-pos="up" class="tooltip-big-text" id="pr3">
+            壁畫
+          </span>
+        </li>
+        <li id="pushed-right-4">
+          <span aria-label="點擊進入和平島數位圖像故事館" data-balloon-pos="down" class="tooltip-big-text" id="pr4">
+            卷軸
+          </span>
+        </li>
+    </ul>
+    <div class="scroll">
+        <div class="l-pic-index"></div>
+        <div class="r-pic-index"></div>
+        <div class="l-bg-index"></div>
+        <div class="r-bg-index"></div>
+        <div class="main-index">
+            <div class="linkRoom"><a href="https://smallowl0506.github.io/HepingIS/%E7%B6%B2%E9%A0%81%E9%80%A3%E7%B5%90%E5%AE%A4/dist/index.html"><img id="guide" src="https://img.onl/0FcERs" alt=""/></a></div>
+                <div class="titleText">
+                <h1>和平島數位圖像故事館</h1>
+                </div>
+                <div class="puzzle"><img class="castle castleHover" id="castle1" src="https://img.onl/QMUTfN"/><img class="castle castleHover" id="castle2" src="https://img.onl/qW8pTx"/><img class="castle castleHover" id="castle3" src="https://img.onl/MUaEH"/><img class="castle castleHover" id="castle4" src="https://img.onl/mO5s4h"/><img class="castle castleHover" id="castle5" src="https://img.onl/kvPK0B"/><img class="castle castleHover" id="castle6" src="https://img.onl/YSswIh"/><img id="castleF" src="https://img.onl/rDmtCw" alt=""/></div>
+                <div class="map">
+                <div class="top">
+                    <div class="top1"><a href="https://smallowl0506.github.io/HepingIS/%E9%9B%BB%E5%AD%90%E5%A0%B1%E5%88%8A%E5%AE%A4/dist/index.html">&#x96FB;&#x5B50;&#x5831;&#x520A;&#x5BA4;</a></div>
+                    <div class="top2"><a href="https://smallowl0506.github.io/HepingIS/%E6%AD%B7%E5%8F%B2%E7%99%BC%E5%B1%95%E5%BB%B3/dist/index.html">&#x6B77;&#x53F2;&#x767C;&#x5C55;&#x5EF3;</a></div>
+                    <div class="top3"><a href="https://smallowl0506.github.io/HepingIS/%E4%B8%BB%E9%A1%8C%E7%89%B9%E5%B1%95%E5%AE%A4/dist/index.html">&#x4E3B;&#x984C;&#x7279;&#x5C55;&#x5BA4;</a></div>
+                </div>
+                <div class="center">
+                    <div class="center1"><a href="">&#x751F;<br/>&#x6D3B;<br/>&#x6587;<br/>&#x5316;<br/>&#x5EF3;</a></div>
+                    <div class="slide">
+                    <div><img src="https://img.onl/bmMpEv"/></div>
+                    <div><img src="https://img.onl/7DuU3Q"/></div>
+                    <div><img src="https://img.onl/vOu3Q6"/></div>
+                    <div><img src="https://img.onl/8pKcmU"/></div>
+                    <div><img src="https://img.onl/BQ8nGC"/></div>
+                    <div><img src="https://img.onl/lQ6Smq"/></div>
+                    <div><img src="https://img.onl/QBix9R"/></div>
+                    <div><img src="https://img.onl/7fyKhx"/></div>
+                    </div>
+                    <div class="center3"><a href="">&#x7A7A;<br/>&#x9593;<br/>&#x666F;<br/>&#x89C0;<br/>&#x5EF3;</a></div>
+                </div>
+                <div class="bottom">
+                    <div class="bottom1"><a href="https://smallowl0506.github.io/HepingIS/%E8%A8%88%E7%95%AB%E8%B3%87%E8%A8%8A%E5%AE%A4/dist/index.html">&#x8A08;&#x756B;&#x8CC7;&#x8A0A;&#x5BA4;</a></div>
+                    <div class="bottom2"><a href="https://smallowl0506.github.io/HepingIS/%E5%B0%8E%E8%A6%BD%E5%A4%A7%E5%A0%82/dist/index.html">&#x548C;&#x5E73;&#x5CF6;&#x6578;&#x4F4D;&#x5716;&#x50CF;<br/>&#x6545;&#x4E8B;&#x9928;&#x5C0E;&#x89BD;&#x5927;&#x5802;</a></div>
+                    <div class="bottom3"><a href="https://smallowl0506.github.io/HepingIS/%E5%9C%96%E6%9B%B8%E5%AE%A4/dist/index.html">&#x5716;&#x66F8;&#x5BA4;</a></div>
+                </div>
+                </div>
+        </div>
+    </div>
+    
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src='test.js'></script>
+    
+</body>
+</html>

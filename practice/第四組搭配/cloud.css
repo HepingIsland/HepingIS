@@ -1,0 +1,195 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+.sky {
+  height: 100%;
+  background:url("back.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  overflow: hidden;
+  -webkit-animation: sky_background 50s ease-out infinite;
+  -moz-animation: sky_background 50s ease-out infinite;
+  -o-animation: sky_background 50s ease-out infinite;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+}
+
+.clouds_one {
+  background: url("http://www.scri8e.com/stars/PNG_Clouds/zc06.png?filename=./zc06.png&w0=800&h0s=289&imgType=3&h1=50&w1=140");
+  background-repeat: repeat-y;
+  position: absolute;
+  left: 0;
+  top: -10%;
+  height: 200%;
+  width: 400%;
+  -webkit-animation: cloud_one 50s linear infinite;
+  -moz-animation: cloud_one 50s linear infinite;
+  -o-animation: cloud_one 50s linear infinite;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+}
+.clouds_two {
+  background: url("http://www.scri8e.com/stars/PNG_Clouds/zc06.png?filename=./zc06.png&w0=800&h0s=289&imgType=3&h1=50&w1=140");
+  background-repeat: repeat-y;
+  position: absolute;
+  left: 15%;
+  top: 10%;
+  height: 200%;
+  width: 400%;
+  -webkit-animation: cloud_two 55s linear infinite;
+  -moz-animation: cloud_two 55s linear infinite;
+  -o-animation: cloud_two 55s linear infinite;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+}
+
+.clouds_three {
+  background: url("http://www.scri8e.com/stars/PNG_Clouds/zc06.png?filename=./zc06.png&w0=800&h0s=289&imgType=3&h1=50&w1=140");
+  background-repeat: repeat-y;
+  position: absolute;
+  left: 50%;
+  top: -10%;
+  height: 200%;
+  width: 400%;
+  -webkit-animation: cloud_three 50s linear infinite;
+  -moz-animation: cloud_three 50s linear infinite;
+  -o-animation: cloud_three 50s linear infinite;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+}
+.clouds_four {
+  background: url("http://www.scri8e.com/stars/PNG_Clouds/zc06.png?filename=./zc06.png&w0=800&h0s=289&imgType=3&h1=50&w1=140");
+  background-repeat: repeat-y;
+  position: absolute;
+  left: 35%;
+  top: 10%;
+  height: 200%;
+  width: 400%;
+  -webkit-animation: cloud_four 55s linear infinite;
+  -moz-animation: cloud_four 55s linear infinite;
+  -o-animation: cloud_four 55s linear infinite;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+}
+
+.clouds_five {
+  background: url("http://freepngimages.com/wp-content/uploads/2016/02/clouds-transparent-background-2.png");
+  position: absolute;
+  background-repeat: repeat-y;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 300%;
+  -webkit-animation: cloud_five 65s linear infinite;
+  -moz-animation: cloud_five 65s linear infinite;
+  -o-animation: cloud_five 65s linear infinite;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+}
+
+.clouds_six {
+  background: url("http://freepngimages.com/wp-content/uploads/2016/02/clouds-transparent-background-2.png");
+  position: absolute;
+  background-repeat: repeat-y;
+  left: 50%;
+  top: 0;
+  height: 100%;
+  width: 300%;
+  -webkit-animation: cloud_six 65s linear infinite;
+  -moz-animation: cloud_six 65s linear infinite;
+  -o-animation: cloud_six 65s linear infinite;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+}
+@-webkit-keyframes cloud_one {
+  0% {
+    left: 0;
+  }
+  5%{
+    left: 0;
+  }
+  100% {
+    left: -1200%;
+  }
+}
+
+@-webkit-keyframes cloud_two {
+  0% {
+    left: 15%;
+  }
+  5%{
+    left: 15%;
+  }
+  100% {
+    left: -1000%;
+  }
+}
+
+@-webkit-keyframes cloud_three {
+  0% {
+    left: 50%;
+  }
+  5%{
+    left: 50%;
+  }
+  100% {
+    left: 600%;
+  }
+}
+
+@-webkit-keyframes cloud_four {
+  0% {
+    left: 35%;
+  }
+  5%{
+    left: 35%;
+  }
+  100% {
+    left: 800%;
+  }
+}
+
+@-webkit-keyframes cloud_five {
+  0% {
+    left: 0;
+  }
+  5%{
+    left: 0;
+  }
+  100% {
+    left: -600%;
+  }
+}
+
+@-webkit-keyframes cloud_six {
+  0% {
+    left: 50%;
+  }
+  5%{
+    left: 50%;
+  }
+  100% {
+    left: 600%;
+  }
+}
+
+.titleText {
+    text-align: center;
+    letter-spacing: 25px;
+    font-weight: bolder;
+    font-size: 20px;
+  }
+  .titleText h1 {
+    text-shadow: 2px 2px 3px #ffffff;
+  }

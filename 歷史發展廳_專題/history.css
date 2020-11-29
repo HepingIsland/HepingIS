@@ -1,0 +1,360 @@
+@charset "UTF-8";
+* {
+  font-family: "微軟正黑體";
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.webBody {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-image: url(https://img.onl/8lHvXr);
+}
+
+.title {
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  font-size: 2.5vmin;
+  color: white;
+  -webkit-box-flex: 1;
+          flex: 1;
+}
+.title h1 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.title p {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.content {
+  position: relative;
+  -webkit-box-flex: 4;
+          flex: 4;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+          justify-content: space-evenly;
+  align-content: center;
+  overflow: hidden;
+}
+.content .scrollitem {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  height: 60%;
+  width: 5%;
+}
+.content .scrollitem:hover {
+  -webkit-animation: scrollmove 3s both;
+          animation: scrollmove 3s both;
+}
+.content .scrollitem:hover .intro, .content .scrollitem:hover .year, .content .scrollitem:hover .leftpicture, .content .scrollitem:hover .leftpicturetext {
+  -webkit-animation: appear 3s both;
+          animation: appear 3s both;
+}
+.content .scrollitem:hover .scrolltitletext {
+  display: none;
+}
+.content .scrollitem .scrolltitletext {
+  position: absolute;
+  font-size: 2.6vmin;
+  font-weight: bolder;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  z-index: 3;
+}
+.content .scrollitem .leftpicture {
+  position: absolute;
+  top: 10%;
+  left: 13%;
+  height: 60%;
+  width: 27%;
+  z-index: 3;
+  opacity: 0;
+}
+.content .scrollitem .leftpicturetext {
+  position: absolute;
+  text-align: center;
+  font-size: 2.7vmin;
+  top: 70%;
+  left: 13%;
+  height: 17%;
+  width: 27%;
+  z-index: 3;
+  opacity: 0;
+}
+.content .scrollitem .intro {
+  position: absolute;
+  font-size: 2.5vmin;
+  color: black;
+  left: 42%;
+  top: 50%;
+  height: 85%;
+  width: 45%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 3;
+  opacity: 0;
+  overflow: hidden;
+}
+.content .scrollitem .intro p {
+  max-height: 200px;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-60%);
+          transform: translateY(-60%);
+}
+.content .scrollitem .year {
+  position: absolute;
+  left: 2.5%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  height: 10vmin;
+  width: 13vmin;
+  font-size: 2vmin;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  text-align: center;
+  z-index: 3;
+  opacity: 0;
+}
+.content .scrollitem .year a {
+  position: absolute;
+  height: 10vmin;
+  width: 10vmin;
+  text-decoration: none;
+  color: white;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+}
+.content .scrollitem img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+.content .backtoindex {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  position: fixed;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  font-size: 2.5vmin;
+  right: 0;
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+  width: 15vmin;
+  height: 10vmin;
+}
+.content .backtoindex a {
+  text-decoration: none;
+  color: white;
+}
+
+@-webkit-keyframes scrollmove {
+  0% {
+    width: 5%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes scrollmove {
+  0% {
+    width: 5%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@-webkit-keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0.12;
+  }
+  72% {
+    opacity: 0.24;
+  }
+  74% {
+    opacity: 0.36;
+  }
+  76% {
+    opacity: 0.48;
+  }
+  78% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.75;
+  }
+  85% {
+    opacity: 0.8;
+  }
+  88% {
+    opacity: 0.85;
+  }
+  92% {
+    opacity: 0.9;
+  }
+  96% {
+    opacity: 0.95;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0.12;
+  }
+  72% {
+    opacity: 0.24;
+  }
+  74% {
+    opacity: 0.36;
+  }
+  76% {
+    opacity: 0.48;
+  }
+  78% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.75;
+  }
+  85% {
+    opacity: 0.8;
+  }
+  88% {
+    opacity: 0.85;
+  }
+  92% {
+    opacity: 0.9;
+  }
+  96% {
+    opacity: 0.95;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.pageLoading {
+  z-index: 5;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  background-color: #e9d5b0;
+  -webkit-transition: opacity 0.5s 0.5s;
+  transition: opacity 0.5s 0.5s;
+}
+.pageLoading.complete {
+  opacity: 0;
+  display: none;
+}
+
+.loadingtext {
+  font-size: 6vmin;
+  font-weight: bolder;
+  margin-bottom: 6vmin;
+  -webkit-animation: textmoving 1s infinite alternate;
+          animation: textmoving 1s infinite alternate;
+}
+@-webkit-keyframes textmoving {
+  0%,10% {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+  }
+  90%,100% {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    color: blue;
+  }
+}
+@keyframes textmoving {
+  0%,10% {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+  }
+  90%,100% {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    color: blue;
+  }
+}
+.loading {
+  width: 40vmin;
+  height: 2vmin;
+  border-radius: 1vmin;
+  background-color: #fff;
+  overflow: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.loading .bar {
+  background-color: #ffa100;
+  width: 0%;
+  height: 100%;
+}

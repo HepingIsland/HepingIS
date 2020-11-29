@@ -1,0 +1,277 @@
+@mixin size($w,$h:$w)
+  width: $w
+  height: $h
+  
+@mixin flexCenter
+  display: flex
+  justify-content: center
+  align-items: center
+*
+  // border: solid 1px yellow
+  font-family: "微軟正黑體"
+html,body
+  +size(100%)
+  margin: 0
+.webBody
+  // border: solid 2px red
+  overflow: hidden
+  width: 100%
+  height: 100%
+  position: relative
+  display: flex
+  flex-direction: column
+  background-size: cover
+  background-attachment: fixed
+  background-repeat: no-repeat
+  background-image: url(https://img.onl/DCJmru)
+.title
+  background-color: rgba(black,0.7)
+  text-align: center
+  font-size: 2.5vmin
+  color: white
+  flex: 1
+  h1
+    margin-top: 10px
+    margin-bottom: 5px
+    font-size: 6vmin
+  p
+    margin-top: 0
+    margin-bottom: 0
+    margin-left: 30px
+    margin-right: 30px
+    
+.content
+  // border: solid 2px yellow
+  position: relative
+  flex: 4
+  display: flex
+  flex-direction: row
+  justify-content: space-evenly
+  align-content: center
+  overflow: hidden
+  .scrollitem
+    // border: solid 2px red
+    position: relative
+    top: 50%
+    transform: translateY(-50%)
+    height: 60%
+    width: 5%
+    // animation: scrollmoveback 3s both
+    // &:hover
+    //   animation: scrollmove 3s both
+    //   .intro,.year,.leftpicture,.leftpicturetext
+    //     animation: appear 3s both
+    //   .scrolltitletext
+    //     display: none
+    .scrolltitletext
+      position: absolute
+      font-size: 2.6vmin
+      font-weight: bolder
+      top: 50%
+      left: 50%
+      transform: translate(-50%,-50%)
+      writing-mode: vertical-rl
+      z-index: 3
+    .leftpicture
+      position: absolute
+      top: 10%
+      left: 13%
+      height: 60%
+      width: 27%
+      z-index: 3
+      opacity: 0
+    .leftpicturetext
+      // border: solid 1px white
+      position: absolute
+      text-align: center
+      font-size: 2.7vmin
+      top: 70%
+      left: 13%
+      height: 17%
+      width: 27%
+      z-index: 3
+      opacity: 0
+    .intro
+      // border: solid 1px white
+      position: absolute
+      font-size: 2.5vmin
+      color: black
+      left: 42%
+      top: 50%
+      height: 85%
+      width: 45%
+      transform: translateY(-50%)
+      z-index: 3
+      opacity: 0
+      overflow: hidden
+      p
+        max-height: 200px
+        padding: 0
+        margin: 0
+        position: absolute
+        top: 50%
+        transform: translateY(-60%)
+    .year
+      // border: solid 1px white
+      position: absolute
+      left: 2.5%
+      top: 50%
+      transform: translateY(-50%)
+      height: 10vmin
+      width: 13vmin
+      font-size: 2vmin
+      background-color: rgba(black,0.7)
+      color: white
+      display: flex
+      justify-content: center
+      align-items: center
+      text-align: center
+      z-index: 3
+      opacity: 0
+      a
+        position: absolute
+        height: 10vmin
+        width: 10vmin
+        text-decoration: none
+        color: white
+        display: flex
+        justify-content: center
+        align-items: center
+        // cursor: pointer
+    img
+        position: absolute
+        top: 0
+        left: 0
+        height: 100%
+        width: 100%
+        z-index: 1
+  .backtoindex
+    // border: solid 1px blue
+    background-color: rgba(black,0.7)
+    color: white
+    position: fixed
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 2.5vmin
+    right: 0
+    bottom: 0
+    padding: 0
+    margin: 0
+    +size(15vmin,10vmin)
+    a
+      text-decoration: none
+      color: white
+      
+// @keyframes scrollmove
+//   0%
+//     width: 5%
+//   100%
+//     width: 100%
+  
+// @keyframes scrollmoveback
+//   0%
+//     width: 100%
+//   100%
+//     width: 5%
+
+// @keyframes appear
+//   0%
+//     opacity: 0
+//   70%
+//     opacity: 0.12
+//   72%
+//     opacity: 0.24
+//   74%
+//     opacity: 0.36
+//   76%
+//     opacity: 0.48
+//   78%
+//     opacity: 0.6
+//   80%
+//     opacity: 0.75
+//   85%
+//     opacity: 0.8
+//   88%
+//     opacity: 0.85
+//   92%
+//     opacity: 0.9
+//   96%
+//     opacity: 0.95
+//   100%
+//     opacity: 1
+  
+.pageLoading
+  z-index: 5
+  position: fixed
+  +size(100%)
+  left: 0
+  top: 0
+  +flexCenter
+  flex-direction: column
+  background-color: #BFECFF
+  transition: opacity 0.5s 0.5s
+  &.complete
+    opacity: 0
+    display: none
+    
+.loadingtext
+  font-size: 6vmin
+  font-weight: bolder
+  margin-bottom: 6vmin
+  animation: textmoving 1s infinite alternate
+  @keyframes textmoving
+    0%,10%
+      transform: translateY(50%)
+      opacity: 0.5
+    90%,100%
+      transform: translateY(-50%)
+      color: red
+      font-size: 6.9vmin
+  
+.loading
+  +size(40vmin,2vmin)
+  // margin-top: 80px
+  border-radius: 1vmin
+  background-color: black
+  overflow: hidden
+  transition: 0.5s
+  .bar
+    background-color: #ffa100
+    +size(0%,100%)
+
+.wave
+  // border: solid 2px red
+  position: absolute
+  overflow: hidden
+  // background-color: #fff
+  margin-top: -30%
+  height: 180%
+  width: 180%
+  img
+    // border: solid 5px red
+    position: absolute
+    top: 0
+    left: 0
+    height: 100%
+    width: 100%
+    z-index: 5
+
+  @keyframes allhide
+    0%
+      display: none
+    100%
+      display: initial
+// .title,.content,.backtoindex
+//   animation: allhide 3s
+//   display: none
+// .title
+//   &.showall
+//     display: initial
+// .content,.backtoindex
+//   &.showall
+//     display: flex
+// .pageLoading
+//   &.showall
+//     display: none
+    

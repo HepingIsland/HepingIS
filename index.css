@@ -1,0 +1,628 @@
+*{
+  /*border: solid 2px black;*/
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -o-user-select:none;
+  user-select:none;
+  margin: 0;
+  padding: 0;
+  text-align:center;
+  
+}
+
+html,body{
+  height:100%;
+  width: 100%;
+  overflow: hidden;
+  min-width: 625px;
+}
+
+.sky {
+  height: 100%;
+  width: 100%;
+  background:url("back2.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  overflow: hidden;
+  -webkit-animation: sky_background 50s ease-out ;
+  -moz-animation: sky_background 50s ease-out ;
+  -o-animation: sky_background 50s ease-out ;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+}
+
+.clouds_one {
+  background: url("http://www.scri8e.com/stars/PNG_Clouds/zc06.png?filename=./zc06.png&w0=800&h0s=289&imgType=3&h1=50&w1=140");
+  background-repeat: repeat-y;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  animation-name: cloud_one;
+  animation-duration:5s;
+  animation-fill-mode: both;
+}
+.clouds_two {
+  background: url("http://www.scri8e.com/stars/PNG_Clouds/zc06.png?filename=./zc06.png&w0=800&h0s=289&imgType=3&h1=50&w1=140");
+  background-repeat: repeat-y;
+  position: absolute;
+  left: 15%;
+  top: 13%;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  animation-name: cloud_two;
+  animation-duration:5s;
+  animation-fill-mode: both;
+}
+.clouds_three {
+  background: url("http://www.scri8e.com/stars/PNG_Clouds/zc06.png?filename=./zc06.png&w0=800&h0s=289&imgType=3&h1=50&w1=140");
+  background-repeat: repeat-y;
+  position: absolute;
+  left: 40%;
+  top: 0%;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  animation-name: cloud_three;
+  animation-duration:5s;
+  animation-fill-mode: both;
+}
+
+.clouds_four {
+  background: url("http://www.scri8e.com/stars/PNG_Clouds/zc06.png?filename=./zc06.png&w0=800&h0s=289&imgType=3&h1=50&w1=140");
+  background-repeat: repeat-y;
+  position: absolute;
+  left: 55%;
+  top: 15%;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  animation-name: cloud_four;
+  animation-duration:5s;
+  animation-fill-mode: both;
+}
+
+.clouds_five {
+  background: url("http://freepngimages.com/wp-content/uploads/2016/02/clouds-transparent-background-2.png");
+  position: absolute;
+  background-repeat: repeat-y;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 400%;
+  pointer-events: none;
+  animation-name: cloud_five;
+  animation-duration:5s;
+  animation-fill-mode: both;
+}
+
+.clouds_six {
+  background: url("http://freepngimages.com/wp-content/uploads/2016/02/clouds-transparent-background-2.png");
+  position: absolute;
+  background-repeat: repeat-y;
+  left: 60%;
+  top: 0;
+  height: 100%;
+  width: 400%;
+  pointer-events: none;
+  animation-name: cloud_six;
+  animation-duration:5s;
+  animation-fill-mode: both;
+}
+
+
+@-webkit-keyframes cloud_one {
+  0% {
+    left: 0;
+  }
+  5%{
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+@-webkit-keyframes cloud_two {
+  0% {
+    left: 15%;
+  }
+  5%{
+    left: 15%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+@-webkit-keyframes cloud_three {
+  0% {
+    left: 60%;
+  }
+  5%{
+    left: 60%;
+  }
+  100% {
+    left: 120%;
+  }
+}
+
+@-webkit-keyframes cloud_four {
+  0% {
+    left: 45%;
+  }
+  5%{
+    left: 45%;
+  }
+  100% {
+    left: 120%;
+  }
+}
+
+@-webkit-keyframes cloud_five {
+  0% {
+    left: 0;
+  }
+  5%{
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+@-webkit-keyframes cloud_six {
+  0% {
+    left: 60%;
+  }
+  5%{
+    left: 60%;
+  }
+  100% {
+    left: 120%;
+  }
+}
+
+.titleText {
+    text-align: center;
+    letter-spacing: 25px;
+    font-weight: bolder;
+    font-size: 3.5vmin;
+  }
+  .titleText h1 {
+    text-shadow: 2px 2px 3px #ffffff;
+  }
+
+
+  .HorizontalContainer{
+    display: flex;
+    flex-direction: row;
+    height: 80%;
+  }
+
+  .all{
+    position: relative;
+    width: 60%;
+    height: 100%;
+    left:20%;
+    display:flex;
+    flex-direction: column;
+  }
+
+  .map{
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    height: 90%;
+    min-width: 625px;
+  }
+  .map a{
+    display:flex;
+    flex-direction: column ;
+    color: initial;
+    text-decoration: initial;
+    font-family: 微軟正黑體;
+    font-size: 25px;
+    color: white;
+    text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
+    transition: 0.5s;
+  }
+  .map a:hover{
+    transform: scale(1.3);
+}
+
+.top{
+  flex: 2;
+  position:relative;
+  display:flex;
+  flex-direction: row ;
+  justify-content:center;
+  align-items: flex-end;
+}
+
+.top1{
+  position: relative;
+  width:20%;
+  -webkit-clip-path: polygon(0 0, 50% 15%, 100% 50%, 100% 100%, 50% 100%, 0 70%);
+  clip-path: polygon(0 0, 50% 15%, 100% 50%, 100% 100%, 50% 100%, 0 70%);
+  line-height:150px;
+  background-color: black;
+}
+
+.top1:after{
+  content: "";
+  position: absolute;
+  -webkit-clip-path: polygon(0 0, 50% 15%, 100% 50%, 100% 100%, 50% 100%, 0 70%);
+  clip-path: polygon(0 0, 50% 15%, 100% 50%, 100% 100%, 50% 100%, 0 70%);
+  background-image:url(m1.jpg);
+  background-size: cover;
+  background-position:center;
+  opacity:0.6;
+  z-index: -10;
+  top: 3px;
+  left: 3px;
+  right: 3px;
+  bottom: 3px;
+}
+
+.top2{ 
+  position: relative;
+  width:50%;
+  height:75px;
+  vertical-align:middle;
+  line-height:75px;
+  box-sizing: border-box;
+  background-color: black;
+  z-index: 0;
+}
+
+.top2:after{
+  content: "";
+  position: absolute;
+  background-image:url(m2.jpg);
+  background-size: cover;
+  background-position:center;  
+  opacity: 0.6;
+  z-index: -1;
+  top: 3px;
+  left: 3px;
+  right: 3px;
+  bottom: 3px;
+}
+
+.top3{
+  position: relative;
+  width:20%;
+  -webkit-clip-path: polygon(100% 0, 50% 15%, 0 50%, 0 100%, 50% 100%, 100% 70%);
+  clip-path: polygon(100% 0, 50% 15%, 0 50%, 0 100%, 50% 100%, 100% 70%);
+  line-height:150px;
+  background-color: black;
+}
+
+.top3:after{
+  content: "";
+  position: absolute;
+  -webkit-clip-path: polygon(100% 0, 50% 15%, 0 50%, 0 100%, 50% 100%, 100% 70%);
+  clip-path: polygon(100% 0, 50% 15%, 0 50%, 0 100%, 50% 100%, 100% 70%);
+  background-image:url(m3.jpg);
+  background-size: cover;
+  background-position:center;
+  z-index: -10  ;
+  opacity:0.6;
+  top: 3px;
+  left: 3px;
+  right: 3px;
+  bottom: 3px;
+}
+
+.center{
+  flex:5;
+  display:flex;
+  flex-direction: row ;
+  align-items: center;
+  justify-content:center;
+}
+
+.center a{
+  font-size: 30px;
+  justify-content:center;
+  width: 100%;
+  height: 100%;
+  line-height: 30px;
+}
+
+.center1{
+  position: relative;
+  height:100%;
+  width:10%;
+  box-sizing: border-box;
+  background-color: black;
+  z-index: 0;
+  line-height:500px;
+}
+
+.center1:after{
+  content: "";
+  position: absolute;
+  background-image:url(m4.jpg);
+  background-size: cover;
+  background-position:center;
+  opacity:0.6;
+  z-index: -1;
+  top: 3px;
+  left: 3px;
+  right: 3px;
+  bottom: 3px;
+}
+
+.center3{
+  position: relative;
+  height:100%;
+  width:10%;
+  box-sizing: border-box;
+  background-color: black;
+  z-index: 0;
+  line-height:500px;
+}
+
+.center3:after{
+  content: "";
+  position: absolute;
+  background-image:url(m5.jpg);
+  background-size: cover;
+  background-position:center;
+  opacity:0.6;
+  z-index: -1;
+  top: 3px;
+  left: 3px;
+  right: 3px;
+  bottom: 3px;
+}
+
+.bottom{
+  flex:2;
+  display:flex;
+  flex-direction: row ;
+  align-items: flex-start;
+  justify-content:center;
+}
+.bottom1{
+  position: relative;
+  width:20%;
+  -webkit-clip-path: polygon(0 100%, 70% 80%, 100% 50%, 100% 0, 50% 0, 0 25%);
+  clip-path: polygon(0 100%, 70% 80%, 100% 50%, 100% 0, 50% 0, 0 25%);
+  line-height:150px;
+  background-color: black;
+}
+
+.bottom1:after{
+  content: "";
+  position: absolute;
+  -webkit-clip-path: polygon(0 100%, 70% 80%, 100% 50%, 100% 0, 50% 0, 0 25%);
+  clip-path: polygon(0 100%, 70% 80%, 100% 50%, 100% 0, 50% 0, 0 25%);
+  background-image:url(m6.jpg);
+  background-size: cover;
+  background-position:center;
+  z-index: -10  ;
+  opacity:0.6;
+  top: 3px;
+  left: 3px;
+  right: 3px;
+  bottom: 3px;
+}
+
+.bottom2{
+  position: relative;
+  width:50%;
+  height:75px;
+  
+  line-height:35px;
+  box-sizing: border-box;
+  background-color: black;
+  z-index: 0;
+}
+
+.bottom2:after{
+  content: "";
+  position: absolute;
+  background-image:url(m7.jpg);
+  background-size: cover;
+  background-position:center;
+  z-index: -1  ;
+  opacity:0.6;
+  top: 3px;
+  left: 3px;
+  right: 3px;
+  bottom: 3px;
+}
+
+.bottom3{
+  position: relative;
+  width:20%;
+  -webkit-clip-path: polygon(100% 100%, 50% 85%, 0 50%, 0 0, 50% 0, 100% 25%);
+  clip-path: polygon(100% 100%, 50% 85%, 0 50%, 0 0, 50% 0, 100% 25%);
+  line-height:150px;
+  background-color: black;
+}
+
+.bottom3:after{
+  content: "";
+  position: absolute;
+  -webkit-clip-path: polygon(100% 100%, 50% 85%, 0 50%, 0 0, 50% 0, 100% 25%);
+  clip-path: polygon(100% 100%, 50% 85%, 0 50%, 0 0, 50% 0, 100% 25%);
+  background-image:url(m8.jpg);
+  background-size: cover;
+  background-position:center;
+  z-index: -1  ;
+  opacity:0.6;
+  top: 3px;
+  left: 3px;
+  right: 3px;
+  bottom: 3px;
+}
+
+.slide {
+  background-color: white;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  border: solid 2px black;
+}
+.slide > div {
+  background-color: black;
+
+  width: 100%;
+  height: 110%;
+  transform-origin: center;
+  background-size: cover;
+  position: absolute;
+  animation: slide 40s infinite;
+  opacity: 0;
+}
+
+.slide>div>img{
+  transform: scale(1.1);
+  height: 110%;
+  width: 100%;
+}
+
+.slide > div:nth-child(2) {
+  animation-delay: 5s;
+}
+.slide > div:nth-child(3) {
+  animation-delay: 10s;
+}
+.slide > div:nth-child(4) {
+  animation-delay: 15s;
+}
+.slide > div:nth-child(5) {
+  animation-delay: 20s;
+}
+.slide > div:nth-child(6) {
+  animation-delay: 25s;
+}
+.slide > div:nth-child(7) {
+  animation-delay: 30s;
+}
+.slide > div:nth-child(8) {
+  animation-delay: 35s;
+}
+
+@-webkit-keyframes slide {
+  10% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  40% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes slide {
+  6.25% {
+    opacity: 1;
+  }
+  12.5% {
+    opacity: 1;
+  }
+  18.75% {
+    opacity: 0;
+  }
+  25% {
+    transform: scale(1.1);
+  }
+}
+
+.dockContainer {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  /*overflow: hidden;*/
+  touch-action: none;
+}
+.dock {
+  width: 100px;
+  height: 100px;
+  background-color: rgba(168, 218, 220, 1.00);
+  background-image: url(NewShip.png);
+  background-size: auto 100%;
+  background-position:center;
+  border: 10px solid rgba(136, 136, 136, .5);
+  border-radius: 50%;
+  touch-action: none;
+  user-select: none;
+}
+.dock a{
+  color: initial;
+  text-decoration: initial;
+  font-family: 微軟正黑體;
+}
+.dock:active {
+  background-color: rgb(245, 230, 99);
+}
+.dock:hover {
+  cursor: pointer;
+  border-width: 15px;
+  background-size: auto 115%;
+  background-position:center;
+}
+
+@media screen and (orientation: portrait) {
+  .titleText{
+    font-size: 3.5vmin;
+  }
+
+  .map{
+    top: 10%;
+    left: -30%;
+    width: 160%;
+    height: 60%;
+  }
+
+  .dock{
+    height: 200px;
+    width: 200px;
+  }
+
+  .dock a{
+    font-size: 33px;
+  }
+
+  body{
+      width : 100%;
+      height : 100%;
+  }
+}
+@media screen and (max-width:1000px)  {
+  .dock{
+    height: 150px;
+    width: 150px;
+  }
+  .dock a{
+    font-size: 22px;
+  }
+  .sky{
+    overflow-y: scroll;
+  }
+}
+
+/*
+@media screen and (orientation: landscape) and (max-width:1000px) {
+  .titleText h1 {
+    font-size: 15vmin;
+  }
+  
+}

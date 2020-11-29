@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>圖書室</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+
+<div class="webBody">
+  <div class="title">
+    <h1>圖書室<br></h1>
+    <p>本數位圖像故事館的圖書室蒐集並提供和平島相關的研究文獻目錄，以幫助觀閱者進一步了解和平島。除了本計畫團隊的研究成果之外，還囊括國內外相關研究成果。文獻目錄將持續更新。所有文獻資料分成四類：古代文獻、視覺史料、近人論著及報刊網頁。</p>
+  </div>
+  <div class="content">
+    <select id="selectRoom" name="rooms" onchange="changeRoom()">
+      <option value="古代文獻">古代文獻</option>
+      <option value="視覺史料">視覺史料</option>
+      <option value="近人論著">近人論著</option>
+      <option value="報刊網頁">報刊網頁</option>
+    </select>
+    <div class="verticalScrollitem"><img src="scroll.png"/></div>
+    <div class="scrollitem scrollitem1">
+      <div class="scrolltitletext scrolltitletext1">一、古代文獻</div>
+      <div class="leftpicture leftpicture1"></div>
+      <div class="leftpicturetext leftpicturetext1"> </div>
+      <div class="intro intro1"></div>
+      <div class="year year1">
+        <p>點我進入</p>
+      </div><img src="scroll.png"/>
+    </div>
+    <div class="scrollitem scrollitem2">
+      <div class="scrolltitletext scrolltitletext2">二、視覺史料</div>
+      <div class="leftpicture leftpicture2"></div>
+      <div class="leftpicturetext leftpicturetext2"> </div>
+      <div class="intro intro2"></div>
+      <div class="year year2">
+        <p>點我進入</p>
+      </div><img src="scroll.png"/>
+    </div>
+    <div class="scrollitem scrollitem3">
+      <div class="scrolltitletext scrolltitletext3">三、近人論著</div>
+      <div class="leftpicture leftpicture3"></div>
+      <div class="leftpicturetext leftpicturetext3"> </div>
+      <div class="intro intro3"></div>
+      <div class="year year3">
+        <p>點我進入</p>
+      </div><img src="scroll.png"/>
+    </div>
+    <div class="scrollitem scrollitem4">
+      <div class="scrolltitletext scrolltitletext4">四、報刊網頁</div>
+      <div class="leftpicture leftpicture4"></div>
+      <div class="leftpicturetext leftpicturetext4"></div>
+      <div class="intro intro4"></div>
+      <div class="year year4">
+        <p>點我進入</p>
+      </div><img src="scroll.png"/>
+    </div>
+    <div class="backtoindex"> 
+      <p>回到<br>上頁</p>
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

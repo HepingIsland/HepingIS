@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>和平島數位圖像故事館導覽大堂</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/572b8d47e5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="webBody">
+  <div class="title">
+    <h1>和平島數位圖像故事館導覽大堂<br></h1>
+    <p>本廳為和平島數位圖像故事館導覽大堂，主要是介紹本故事館成立緣由與各廳室之概要</p>
+  </div>
+  <div class="content">
+    <div class="part1">
+      <div class="part1_title">
+        壹、設立宗旨
+      </div>
+      <div class="part1_1">
+        <h1>一、緣起 <button onclick="play('p1')"><i class="fas fa-volume-up"></i></button><button onclick="pause()"><i class="fas fa-pause"></i></button><button onclick="resume()"><i class="fas fa-play"></i></button><button onclick="cancel()"><i class="fas fa-stop"></i></button></h1>
+        <p id="p1">&emsp;&emsp;基隆正轉型為國際郵輪停泊旗鑑港，港市的觀光旅遊產業有待升級；具有獨特的史地背景的和平島，則面臨漁村沒落、造船業式微的困局，亟待再造活化。
+          <span class="bold">國立臺灣海洋大學人文社會科學院團隊有鑑於此，乃以和平島為標的，規劃申請教育部大學社會責任（USR/B類）第二期計畫「打造國際旅遊島：和平島及其周邊之地域創生與永續發展」（109-111）並獲通過補助。</span>
+          該計畫以「打造國際旅遊島」為願景，以地方創生、永續發展、人才培育為主軸，以兼顧地方文化傳承、特色產業促進以及社區公民參與為核心概念，以整合規劃、共同推動與社會實踐為策略，擬
+          <span class="bold">透過：<br>&emsp;&emsp;1.和平島的文化資產活化與推廣；
+          <br>&emsp;&emsp;2.和平島國際永續觀光發展與人才培育規劃；
+          <br>&emsp;&emsp;3.和平島海洋休閒運動基地創建與產業實踐整合；
+          <br>&emsp;&emsp;4.以共創方式開發和平島及其周邊文創商品；
+          <br>&emsp;&emsp;5.和平島數位圖像故事館等五大子計畫之執行；
+          <br></span>&emsp;&emsp;推動海洋文化資產活化、海洋觀光事業發展、海洋休閒產業促進、文創設計商品開發、地方文化數位再現等具體事項，
+          期能<span class="bold">促進地方文化資產的保存創新活化，以及文創、觀光、休閒等特色產業的創生發展，提升在地勞動力的增值轉型，以利和平島及其周邊地區永續發展。</span></p>  
+      </div>
+      <div class="part1_1" data-aos="fade-right">
+        <h1>二、計畫目標 <button onclick="play('p2')"><i class="fas fa-volume-up"></i></button><button onclick="pause()"><i class="fas fa-pause"></i></button><button onclick="resume()"><i class="fas fa-play"></i></button><button onclick="cancel()"><i class="fas fa-stop"></i></button></h1>
+        <p id="p2">&emsp;&emsp;<span class="bold">「和平島數位圖像故事館」即為上揭計畫的子計畫之一，旨在建構地方文化數位再現的平臺。其計畫目標為：</span><br>
+          &emsp;&emsp;<span class="bold">（一）文化保存與活化：</span>以文字和圖像重現和平島前世今生之時空演變和生活文化，並以數位科技和網頁載體加以典藏與呈現，以達文化保存、資訊公開、利於傳承、創新應用的效能。<br><br>
+          &emsp;&emsp;<span class="bold">（二）深化研究呈現圖文內容：</span>匯集歷史發展軌跡、空間景觀變遷、生活文化交融等研究撰述文字、歷史場景插畫及互動導覽科技，以「聖薩爾瓦多城」圖像，做為「和平島數位圖像故事館」的虛擬館址，並在稜堡及房舍虛擬配置各種展廳室，訪客可以點選進入參觀。其圖文內容的三大面向為：<br><br>
+          <span class="part1_align"><span class="bold">1. 歷史發展軌跡：</span>包含「從遠古到近世：原漢移民與轉口貿易」、「大航海時代：西荷明鄭的交錯」、「清代的變遷：從雞籠港到社寮庄」、「日治時期的轉型：造船與水產基地」、「光復迄今的發展：從海洋產業到地方創生」等五個時期。<br></span><br>
+          <span class="part1_align"><span class="bold">2. 空間景觀變遷：</span>「古今地圖對照與數位層疊」、「消失的人文遺跡與重現」、「歷史古跡的物換星移」、「著名景點的前世今生」等四個單元。<br></span><br>
+          <span class="part1_align"><span class="bold">3. 生活文化交融：</span>「多元族群的歷史登場」、「產業的故事：商貿、造船、漁業與創生」、「民俗信仰與生活技藝」、「生命歷程與藝文創作」等四個單元。<br></span><br>
+          &emsp;&emsp;<span class="bold">（三）建立數位互動網頁：</span>採用CodePen與Sublime Text為開發平台，開發視覺化互動式網頁，讓使用者能選擇時間點，查看到對應的故事敘述與圖片，並將和平島地形做空間與時間結合，以產生更吸引人的視覺呈現。以此為基礎完成故事館的基本網頁建置、和平島地形空間設計與建置、數位圖像層疊設計與建置，並整合網頁呈現介面。<br><br>
+          &emsp;&emsp;<span class="bold">（四）強化整體計畫的整合與執行效能：</span>本子計畫除了分年執行的三大主題：歷史軌跡發展、空間景觀變化、生活文化交融等項目外，亦設「計畫資訊室」、「電子期刊室」、「圖書室」、「網頁連結室」，呈現本計畫共同執行項目以及各子計畫活動訊息與執行成果，以利全計畫的整合、宣傳，以及和平島地方文化的推廣與產業促進。
+          </p>
+      </div>
+      <div class="part1_1" data-aos="fade-left">
+        <h1>三、預期效益 <button onclick="play('p3')"><i class="fas fa-volume-up"></i></button><button onclick="pause()"><i class="fas fa-pause"></i></button><button onclick="resume()"><i class="fas fa-play"></i></button><button onclick="cancel()"><i class="fas fa-stop"></i></button></h1>
+        <p id="p3">&emsp;&emsp;<span class="bold">（一）建構互動式網頁視覺化2D/2.5D圖像故事館：</span>在網頁呈現歷史軌跡發展、空間景觀變化、生活文化交融等三大主題成果，建置研究文字敘述與圖像蒐集繪製的圖文數位資料庫，將和平島歷史文物數位化，使其能夠永久保存供後人觀賞，並達到文化保存、資訊公開、利於傳承、創新應用的效能。<br><br>
+          &emsp;&emsp;<span class="bold">（二）利於和平島歷史文化的保存、推廣、創新、活化與地方行銷：</span>其內容除提供其他子計畫參考應用之外，亦可供和平島地區觀光導覽、各種實體館場展覽、空間美化裝置、出版實體繪本、文創產品設計發想應用、在地產業文化加值等商業運轉之所資，產生授權出版，影視製作等的商業利益。<br><br>
+          &emsp;&emsp;<span class="bold">（三）提供學校與社會教育資源平台：</span>成為「和平島國際旅遊島」最具權威與效益的圖文數位資料庫，增加民眾參觀網頁版故事館之興趣，提升民眾文化素質；經過學術考證的內容與與歷史場景畫作，可幫助地方政府在發展文化觀光產業時能朝向正確且精緻的方向前進。<br><br>
+          &emsp;&emsp;<span class="bold">（四）作為HTML5創新應用的典範：</span>帶動臺灣相關技術之發展，並以和平島之歷史文物資料作互動式故事設計，創造更多文化故事IP。
+        </p>
+      </div>
+      <div class="part1_1" data-aos="fade-right">
+        <h1>四、永續發展目標(SDGs) <button onclick="play('p4')"><i class="fas fa-volume-up"></i></button><button onclick="pause()"><i class="fas fa-pause"></i></button><button onclick="resume()"><i class="fas fa-play"></i></button><button onclick="cancel()"><i class="fas fa-stop"></i></button></h1>
+        <p id="p4">&emsp;&emsp;和平島地區的永續發展，必須兼顧地方文化永續與特色產業創新，並使之融入居民生活，兩相結合相互發展，藉此建立和平島地方文化和特色產業意象，帶動區域經濟振興與永續人文社會發展。
+          本子計畫的執行利於執方文化人才培育、永續觀光發展，促進地方文化與產品，並為地方擬定文化資產保存與活化政策提供基本資料與方向。
+          此外，本子計畫擴大應用數位人文再現，加深研究佐以圖像重現歷史場景，再以數位科技加以典藏與呈現，以達文化保存、資訊公開、利於傳承創新應用的效能，並配合本計畫地方創生、永續發展、人才培育的主軸，促進地方文化資產保存創新活化，推動文創觀光休閒等特色產業發展，提升在地勞動力增值轉型，以利地方永續發展。(SDGs4,8,11,12)<br><br>
+          &emsp;&emsp;本子計畫5社會實踐議題與影響評估對應聯合國永續發展目標列表如下：<br>
+        </p>
+        <table border: solid 1px white; data-aos="flip-down" data-aos-delay="300">
+          <tr>
+            <th colspan="2">對應聯合國永續發展目標</th>
+            <th>本子計畫5社會實踐議題與影響評估</th>
+          </tr>
+          <tr>
+            <td>SDGs4：確保有教無類、公平以及高品質的教育，及提倡終身學習。</td>
+            <td>4.7確保所有的學子都習得必要的知識與技能而可以促進永續發展，包括永續發展教育、永續生活模式、…文化差異欣賞以及文化對永續發展的貢獻。</td>
+            <td>配合本計畫地方創生、永續發展、人才培育的主軸，落實課群方案，提升在地勞動力增值轉型，以利地方永續發展。</td>
+          </tr>
+          <tr>
+            <td>SDGs8：促進包容且永續的經濟成長，達到全面且生產力的就業，讓每個人都有好工作。</td>
+            <td>8.9制定及實施政策，以促進永續發展的觀光業，創造就業，促進地方文化與產品。</td>
+            <td>和平島地區的永續發展，必須兼顧地方文化永續與特色產業創新，並使之融入居民生活，藉此建立和平島地方文化和特色產業意象，帶動區域經濟振興與永續人文社會發展。本子計畫的執行利於執方文化人才培育、永續觀光發展，促進地方文化與產品，並為地方擬定文化資產保存與活化政策提供基本資料與方向。</td>
+          </tr>
+          <tr>
+            <td>SDGs11：促使城市與人類居住具包容、安全、韌性及永續性。</td>
+            <td>11.4在全球的文化與自然遺產的保護上，進一步努力。</td>
+            <td>和平島歷史文化資產的內容與價值，仍有資訊不足、不夠公開、諮詢無門、傳承不易、創新無方的限制。本子計畫5加深研究佐以圖像重現歷史場景，再以數位科技加以典藏與呈現，建構文化資產傳承、創新與活化的數位平台，以達文化保存永續之效。</td>
+          </tr>
+          <tr>
+            <td>SDGs 12:確保永續的消費與生產模式。</td>
+            <td>12.b. 制定及實施政策，以監測永續發展對創造就業，促進地方文化與產品的永續觀光的影響。</td>
+            <td>配合本計畫地方創生、永續發展、人才培育的主軸，促進地方文化資產保存創新活化，推動文創觀光休閒等特色產業發展，提升在地勞動力增值轉型，以利地方永續發展；並為地方擬定文化資產保存與活化政策提供基本資料與方向。</td>
+          </tr>
+        </table>
+      </div>
+      <!--
+      <h1>壹、設立宗旨</h1>
+      <p>關於和平島數位圖象故事館<br>______________________________</p>
+      <p>和平島數位圖象故事館(簡稱DMHI)是海洋大學執行教育部USR專案的成果之一，也是推動「和平島國際旅遊島計畫」的資料庫平台，凡與和平島有關無論大基隆甚至全球的歷史故事、文化資產，從原住民與大航海時代，西荷鄭清、日治到民國近代，都是我們收集與展示的範圍。我們館中有大量的圖文資料，都是符合嚴謹學術研究標準的，尤其是歷史場景再現的高擬真插畫更是本館的特色。</p>
+      <p>和平島數位圖象故事館是網路虛擬博物館的型態，但它一切都模仿真實，包括場館建築與運作模式。如果要選擇一幢建築做為館址，當然以曾經聳立在和平島尖端，由西班牙人建立的聖薩爾瓦多城最具有代表性。我們期待未來有一天這座城堡能夠原址原樣復建，並且做為我們故事館的館址。在這一天尚未到來之前，透過虛擬的手段我們仍然可以神遊。</p>
+      -->
+    </div>
+    <div class="part2">
+      <div class="part2_title">
+        貳、廳室簡介
+      </div>
+      <div class="part2_1" data-aos="fade-right">
+        <h1>一、和平島數位圖像故事館導覽大堂</h1>
+        <p>
+          <span class="bold">
+            （一）設立宗旨<br>
+            （二）廳室簡介
+          </span>
+        </p>
+      </div>
+      <div class="part2_1" data-aos="fade-right">
+        <h1>二、歷史發展廳</h1>
+        <p>
+          <span class="bold">
+            （一）從遠古到近世：原漢移民與轉口貿易<br>
+            （二）大航海時代：西荷明鄭的交錯<br>
+            （三）清代的變遷：從雞籠港到社寮庄<br>
+            （四）日治時期的轉型：造船與水產基地<br>
+            （五）光復迄今的發展：從海洋產業到地方創生
+          </span>
+        </p>
+      </div>
+      <div class="part2_1" data-aos="fade-right">
+        <h1>三、空間景觀廳</h1>
+        <p>
+          <span class="bold">
+            （一）古今地圖對照與數位層疊<br>
+            （二）消失的人文遺跡與重現<br>
+            （三）歷史古跡的物換星移<br>
+            （四）著名景點的前世今生
+          </span>
+        </p>
+      </div>
+      <div class="part2_1" data-aos="fade-right">
+        <h1>四、生活文化廳</h1>
+        <p>
+          <span class="bold">
+            （一）多元族群的歷史登場<br>
+            （二）產業的故事─商貿、造船、漁業與創生<br>
+            （三）民俗信仰與生活技藝<br>
+            （四）生命歷程與藝文創作
+          </span>
+        </p>
+      </div>
+      <div class="part2_1" data-aos="fade-right">
+        <h1>五、計畫資訊室</h1>
+        <p>
+          <span class="bold">
+            （一）本計畫宗旨與簡介<br>
+            （二）計畫執行成果：<br>
+           &emsp;&emsp;1. 學術論文 <br>
+           &emsp;&emsp;2. 研究報告 <br>
+           &emsp;&emsp;3. 資料彙整 <br>
+           &emsp;&emsp;4. 導覽手冊
+          </span>
+        </p>
+      </div>
+      <div class="part2_1" data-aos="fade-right">
+        <h1>六、電子期刊室</h1>
+        <p>
+          <span class="bold">（一）潮遊和平島：</span>
+          <span class="part2_align">107年(1-3月、4-6月、7-9月、10-12月)<br>
+                                    108年(1-3月、4-6月、7-9月、10-12月)<br></span>
+          <span class="bold">（二）和平創生：</span>
+          <span class="part2_align">109年(1-3月、4-6月、7-9月、10-12月)<br>
+                                    110年(1-3月、4-6月、7-9月、10-12月)<br>
+                                    111年(1-3月、4-6月、7-9月、10-12月)<br></span><br>
+          <span class="align_right">內容：特載、執行進度（含活動照片與主題說明）、活動報導、影片與演講簡報</span>
+        </p>
+      </div>
+      <div class="part2_1" data-aos="fade-right">
+        <h1>七、主題特展室</h1>
+        <p><span class="bold">不定期展出</span></p>
+      </div>
+      <div class="part2_1" data-aos="fade-right">
+        <h1>八、圖書室</h1>
+        <p><span class="bold">（一）古代文獻：</span>1.檔案；2.古籍；3.地方志；4.民間文書。<br>
+           <span class="bold">（二）近人論著：</span>1.專書；2.專書論文；3.期刊論文<br>
+           <span class="bold">（三）報刊網頁：</span>1.報刊；2.網頁<br>
+           <span class="bold">（四）視覺史料：</span>1.老照片；2.歷史圖像；3.古地圖
+        </p>
+      </div>
+      <div class="part2_1" data-aos="fade-right" data-aos-anchor-placement="center-bottom">
+        <h1>九、網頁連結室</h1>
+        <p><a href="https://sites.google.com/view/ntouusrb">子計畫二宣傳網頁（ntou-usrb.net）</a></p>
+      </div>
+    </div>
+     <!--
+    <div class="part part2">
+      <h1>二.廳室簡介</h1>
+    </div>
+    -->
+  </div>
+</div>
+<div class="backtoindex"> 
+  <p>回到<br>上頁</p>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,692 @@
+html,body{
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
+	background-color: #eee;
+	display: flex;
+	flex-direction: column;
+	/*justify-content: center;
+	align-items: center;*/
+    background: url('back.jpg') no-repeat center center fixed;
+    background-size: cover;
+	z-index: -3;
+}
+
+.title {
+	background-color: rgba(0, 0, 0, 0.7);
+    box-sizing: border-box;
+    overflow: hidden;
+	text-align: center;
+	width: 100%;
+    height: 8vmin;
+	font-size: 2.5vmin;
+	color: white;
+    display: flex;
+    /*position: fixed;
+    flex-direction: column;*/
+    justify-content: center;
+    align-items: center;
+	padding: 1vmin;
+}
+
+.hintBlockTop{
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    height: 10vmin;
+    width: 10vmin;
+    top: 10vmin;
+    right: 10vmin;
+    padding: 1.5vmin;
+    font-size: 2vmin;
+    font-weight: 900;
+    text-align: center;
+    color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	z-index: -3;
+}
+
+.title h1 {
+	margin: 0;
+	font-size: 6vmin;
+}
+
+.content {
+    position: absolute;
+    overflow-x: hidden;
+    top: 8vmin;
+    height: calc(500% - 8vmin);
+    width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	z-index: -2;
+}
+
+.set{
+    width:90%;
+    height: 40%;
+    margin-left: 5%;
+}
+.set img{
+    display: flex; 
+    float: left;
+    padding-right: 5%;
+}
+.set p{
+    font-size: 2vmin;
+    font-weight: 900;
+}
+
+#flipbook{
+	transition: margin-left 0.5s;
+    width: 90vmax;
+    height: 80vmin;
+}
+
+#flipbook .page{
+    width: 90vmax;
+    height: 80vmin;
+    background-color:white;
+    /*line-height:300px;*/
+    font-size: 2.5vmin;
+    text-align:center;
+}
+
+#flipbook .page img{
+    width: 50%;
+    /*display: inline; 
+    float: left; */
+}
+
+#flipbook .page p{
+    margin: 2.2vmin; 
+    font-size: 2vmin;
+    font-weight: 900;
+    text-align: initial;
+}
+#flipbook .page p2{
+    margin: 2.2vmin; 
+    font-size: 2vmax;
+    font-weight: 900;
+    text-align: initial;
+}
+#flipbook .page list1{
+    display: block;
+    font-size: 1.5vmax;
+    font-weight: 900;
+    text-align: left;
+    padding-left: 3%;
+}
+#flipbook .page-wrapper{
+    -webkit-perspective: 2000px;
+    -moz-perspective: 2000px;
+    -ms-perspective: 2000px;
+    -o-perspective: 2000px;
+    perspective: 2000px;
+}
+
+#flipbook .hard{
+    background:#ccc !important;
+    color:#333;
+    -webkit-box-shadow:inset 0 0 5px #666;
+    -moz-box-shadow:inset 0 0 5px #666;
+    -o-box-shadow:inset 0 0 5px #666;
+    -ms-box-shadow:inset 0 0 5px #666;
+    box-shadow:inset 0 0 5px #666;
+    font-weight:bold;
+}
+
+#flipbook .odd{
+    background:-webkit-gradient(linear, right top, left top, color-stop(0.95, #FFF), color-stop(1, #DADADA));
+    background-image:-webkit-linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+    background-image:-moz-linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+    background-image:-ms-linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+    background-image:-o-linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+    background-image:linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+    -webkit-box-shadow:inset 0 0 5px #666;
+    -moz-box-shadow:inset 0 0 5px #666;
+    -o-box-shadow:inset 0 0 5px #666;
+    -ms-box-shadow:inset 0 0 5px #666;
+    box-shadow:inset 0 0 5px #666;
+    
+}
+
+#flipbook .even{
+    background:-webkit-gradient(linear, left top, right top, color-stop(0.95, #fff), color-stop(1, #dadada));
+    background-image:-webkit-linear-gradient(left, #fff 95%, #dadada 100%);
+    background-image:-moz-linear-gradient(left, #fff 95%, #dadada 100%);
+    background-image:-ms-linear-gradient(left, #fff 95%, #dadada 100%);
+    background-image:-o-linear-gradient(left, #fff 95%, #dadada 100%);
+    background-image:linear-gradient(left, #fff 95%, #dadada 100%);
+    -webkit-box-shadow:inset 0 0 5px #666;
+    -moz-box-shadow:inset 0 0 5px #666;
+    -o-box-shadow:inset 0 0 5px #666;
+    -ms-box-shadow:inset 0 0 5px #666;
+    box-shadow:inset 0 0 5px #666;
+}
+
+#flipbook2{
+	transition: margin-left 0.5s;
+    width: 90vmax;
+    height: 80vmin;
+}
+
+#flipbook2 .page{
+    width: 90vmax;
+    height: 80vmin;
+    background-color:white;
+    /*line-height:300px;*/
+    font-size: 2.5vmin;
+    text-align:center;
+}
+
+#flipbook2 .page img{
+    width: 90%;
+    /*display: inline; 
+    float: left; */
+}
+
+#flipbook2 .page p{
+    margin: 2.2vmin; 
+    font-size: 2vmin;
+    font-weight: 900;
+    text-align: initial;
+}
+#flipbook2 .page p2{
+    margin: 2.2vmin; 
+    font-size: 2vmax;
+    font-weight: 900;
+    text-align: initial;
+}
+#flipbook2 .page list2{
+    display: block;
+    font-size: 1.5vmax;
+    font-weight: 900;
+    text-align: left;
+    padding-left: 3%;
+}
+
+#flipbook2 .page-wrapper{
+    -webkit-perspective: 2000px;
+    -moz-perspective: 2000px;
+    -ms-perspective: 2000px;
+    -o-perspective: 2000px;
+    perspective: 2000px;
+}
+
+#flipbook2 .hard{
+    background:#ccc !important;
+    color:#333;
+    -webkit-box-shadow:inset 0 0 5px #666;
+    -moz-box-shadow:inset 0 0 5px #666;
+    -o-box-shadow:inset 0 0 5px #666;
+    -ms-box-shadow:inset 0 0 5px #666;
+    box-shadow:inset 0 0 5px #666;
+    font-weight:bold;
+}
+
+#flipbook2 .odd{
+    background:-webkit-gradient(linear, right top, left top, color-stop(0.95, #FFF), color-stop(1, #DADADA));
+    background-image:-webkit-linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+    background-image:-moz-linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+    background-image:-ms-linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+    background-image:-o-linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+    background-image:linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+    -webkit-box-shadow:inset 0 0 5px #666;
+    -moz-box-shadow:inset 0 0 5px #666;
+    -o-box-shadow:inset 0 0 5px #666;
+    -ms-box-shadow:inset 0 0 5px #666;
+    box-shadow:inset 0 0 5px #666;
+    
+}
+
+#flipbook2 .even{
+    background:-webkit-gradient(linear, left top, right top, color-stop(0.95, #fff), color-stop(1, #dadada));
+    background-image:-webkit-linear-gradient(left, #fff 95%, #dadada 100%);
+    background-image:-moz-linear-gradient(left, #fff 95%, #dadada 100%);
+    background-image:-ms-linear-gradient(left, #fff 95%, #dadada 100%);
+    background-image:-o-linear-gradient(left, #fff 95%, #dadada 100%);
+    background-image:linear-gradient(left, #fff 95%, #dadada 100%);
+    -webkit-box-shadow:inset 0 0 5px #666;
+    -moz-box-shadow:inset 0 0 5px #666;
+    -o-box-shadow:inset 0 0 5px #666;
+    -ms-box-shadow:inset 0 0 5px #666;
+    box-shadow:inset 0 0 5px #666;
+}
+
+#flipbook3{
+	transition: margin-left 0.5s;
+    width: 90vmax;
+    height: 80vmin;
+}
+
+#flipbook3 .page{
+    width: 90vmax;
+    height: 80vmin;
+    background-color:white;
+    /*line-height:300px;*/
+    font-size: 2.5vmin;
+    text-align:center;
+}
+
+#flipbook3 .page img{
+    width: 50%;
+    /*display: inline; 
+    float: left; */
+}
+
+#flipbook3 .page p{
+    margin: 2.2vmin; 
+    font-size: 2vmin;
+    font-weight: 900;
+    text-align: initial;
+}
+#flipbook3 .page p2{
+    margin: 2.2vmin; 
+    font-size: 2vmax;
+    font-weight: 900;
+    text-align: initial;
+}
+#flipbook3 .page list3{
+    display: block;
+    font-size: 1.5vmax;
+    font-weight: 900;
+    text-align: left;
+    padding-left: 3%;
+}
+
+#flipbook3 .page-wrapper{
+    -webkit-perspective: 2000px;
+    -moz-perspective: 2000px;
+    -ms-perspective: 2000px;
+    -o-perspective: 2000px;
+    perspective: 2000px;
+}
+
+#flipbook3 .hard{
+    background:#ccc !important;
+    color:#333;
+    -webkit-box-shadow:inset 0 0 5px #666;
+    -moz-box-shadow:inset 0 0 5px #666;
+    -o-box-shadow:inset 0 0 5px #666;
+    -ms-box-shadow:inset 0 0 5px #666;
+    box-shadow:inset 0 0 5px #666;
+    font-weight:bold;
+}
+
+#flipbook3 .odd{
+    background:-webkit-gradient(linear, right top, left top, color-stop(0.95, #FFF), color-stop(1, #DADADA));
+    background-image:-webkit-linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+    background-image:-moz-linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+    background-image:-ms-linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+    background-image:-o-linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+    background-image:linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+    -webkit-box-shadow:inset 0 0 5px #666;
+    -moz-box-shadow:inset 0 0 5px #666;
+    -o-box-shadow:inset 0 0 5px #666;
+    -ms-box-shadow:inset 0 0 5px #666;
+    box-shadow:inset 0 0 5px #666;
+    
+}
+
+#flipbook3 .even{
+    background:-webkit-gradient(linear, left top, right top, color-stop(0.95, #fff), color-stop(1, #dadada));
+    background-image:-webkit-linear-gradient(left, #fff 95%, #dadada 100%);
+    background-image:-moz-linear-gradient(left, #fff 95%, #dadada 100%);
+    background-image:-ms-linear-gradient(left, #fff 95%, #dadada 100%);
+    background-image:-o-linear-gradient(left, #fff 95%, #dadada 100%);
+    background-image:linear-gradient(left, #fff 95%, #dadada 100%);
+    -webkit-box-shadow:inset 0 0 5px #666;
+    -moz-box-shadow:inset 0 0 5px #666;
+    -o-box-shadow:inset 0 0 5px #666;
+    -ms-box-shadow:inset 0 0 5px #666;
+    box-shadow:inset 0 0 5px #666;
+}
+
+#flipbook4{
+	transition: margin-left 0.5s;
+    width: 90vmax;
+    height: 80vmin;
+}
+
+#flipbook4 .page{
+    width: 90vmax;
+    height: 80vmin;
+    background-color:white;
+    /*line-height:300px;*/
+    font-size: 2.5vmin;
+    text-align:center;
+}
+
+#flipbook4 .page img{
+    width: 50%;
+    /*display: inline; 
+    float: left; */
+}
+
+#flipbook4 .page p{
+    margin: 2.2vmin; 
+    font-size: 2vmin;
+    font-weight: 900;
+    text-align: initial;
+}
+#flipbook4 .page p2{
+    margin: 2.2vmin; 
+    font-size: 2vmax;
+    font-weight: 900;
+    text-align: initial;
+}
+#flipbook4 .page list4{
+    display: block;
+    font-size: 1.5vmax;
+    font-weight: 900;
+    text-align: left;
+    padding-left: 3%;
+}
+
+#flipbook4 .page-wrapper{
+    -webkit-perspective: 2000px;
+    -moz-perspective: 2000px;
+    -ms-perspective: 2000px;
+    -o-perspective: 2000px;
+    perspective: 2000px;
+}
+
+#flipbook4 .hard{
+    background:#ccc !important;
+    color:#333;
+    -webkit-box-shadow:inset 0 0 5px #666;
+    -moz-box-shadow:inset 0 0 5px #666;
+    -o-box-shadow:inset 0 0 5px #666;
+    -ms-box-shadow:inset 0 0 5px #666;
+    box-shadow:inset 0 0 5px #666;
+    font-weight:bold;
+}
+
+#flipbook4 .odd{
+    background:-webkit-gradient(linear, right top, left top, color-stop(0.95, #FFF), color-stop(1, #DADADA));
+    background-image:-webkit-linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+    background-image:-moz-linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+    background-image:-ms-linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+    background-image:-o-linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+    background-image:linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+    -webkit-box-shadow:inset 0 0 5px #666;
+    -moz-box-shadow:inset 0 0 5px #666;
+    -o-box-shadow:inset 0 0 5px #666;
+    -ms-box-shadow:inset 0 0 5px #666;
+    box-shadow:inset 0 0 5px #666;
+    
+}
+
+#flipbook4 .even{
+    background:-webkit-gradient(linear, left top, right top, color-stop(0.95, #fff), color-stop(1, #dadada));
+    background-image:-webkit-linear-gradient(left, #fff 95%, #dadada 100%);
+    background-image:-moz-linear-gradient(left, #fff 95%, #dadada 100%);
+    background-image:-ms-linear-gradient(left, #fff 95%, #dadada 100%);
+    background-image:-o-linear-gradient(left, #fff 95%, #dadada 100%);
+    background-image:linear-gradient(left, #fff 95%, #dadada 100%);
+    -webkit-box-shadow:inset 0 0 5px #666;
+    -moz-box-shadow:inset 0 0 5px #666;
+    -o-box-shadow:inset 0 0 5px #666;
+    -ms-box-shadow:inset 0 0 5px #666;
+    box-shadow:inset 0 0 5px #666;
+}
+
+#flipbook5{
+	transition: margin-left 0.5s;
+    width: 90vmax;
+    height: 80vmin;
+}
+
+#flipbook5 .page{
+    width: 90vmax;
+    height: 80vmin;
+    background-color:white;
+    /*line-height:300px;*/
+    font-size: 2.5vmin;
+    text-align:center;
+}
+
+#flipbook5 .page img{
+    width: 50%;
+    /*display: inline; 
+    float: left; */
+}
+
+#flipbook5 .page p{
+    margin: 2.2vmin; 
+    font-size: 2vmin;
+    font-weight: 900;
+    text-align: initial;
+}
+#flipbook5 .page p2{
+    margin: 2.2vmin; 
+    font-size: 2vmax;
+    font-weight: 900;
+    text-align: initial;
+}
+#flipbook5 .page list4{
+    display: block;
+    font-size: 1.5vmax;
+    font-weight: 900;
+    text-align: left;
+    padding-left: 3%;
+}
+
+#flipbook5 .page-wrapper{
+    -webkit-perspective: 2000px;
+    -moz-perspective: 2000px;
+    -ms-perspective: 2000px;
+    -o-perspective: 2000px;
+    perspective: 2000px;
+}
+
+#flipbook5 .hard{
+    background:#ccc !important;
+    color:#333;
+    -webkit-box-shadow:inset 0 0 5px #666;
+    -moz-box-shadow:inset 0 0 5px #666;
+    -o-box-shadow:inset 0 0 5px #666;
+    -ms-box-shadow:inset 0 0 5px #666;
+    box-shadow:inset 0 0 5px #666;
+    font-weight:bold;
+}
+
+#flipbook5 .odd{
+    background:-webkit-gradient(linear, right top, left top, color-stop(0.95, #FFF), color-stop(1, #DADADA));
+    background-image:-webkit-linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+    background-image:-moz-linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+    background-image:-ms-linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+    background-image:-o-linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+    background-image:linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+    -webkit-box-shadow:inset 0 0 5px #666;
+    -moz-box-shadow:inset 0 0 5px #666;
+    -o-box-shadow:inset 0 0 5px #666;
+    -ms-box-shadow:inset 0 0 5px #666;
+    box-shadow:inset 0 0 5px #666;
+    
+}
+
+#flipbook5 .even{
+    background:-webkit-gradient(linear, left top, right top, color-stop(0.95, #fff), color-stop(1, #dadada));
+    background-image:-webkit-linear-gradient(left, #fff 95%, #dadada 100%);
+    background-image:-moz-linear-gradient(left, #fff 95%, #dadada 100%);
+    background-image:-ms-linear-gradient(left, #fff 95%, #dadada 100%);
+    background-image:-o-linear-gradient(left, #fff 95%, #dadada 100%);
+    background-image:linear-gradient(left, #fff 95%, #dadada 100%);
+    -webkit-box-shadow:inset 0 0 5px #666;
+    -moz-box-shadow:inset 0 0 5px #666;
+    -o-box-shadow:inset 0 0 5px #666;
+    -ms-box-shadow:inset 0 0 5px #666;
+    box-shadow:inset 0 0 5px #666;
+}
+.backtoindex {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  position: fixed;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  font-size: 3.5vmin;
+  right: 0;
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  width: 12vmin;
+  height: 12vmin;
+  z-index: -1;
+}
+
+@media only screen and (orientation: portrait){
+    .content {
+        position: absolute;
+        overflow-x: hidden;
+        top: 8vmin;
+        height: calc(250% - 8vmin);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+
+    #flipbook{
+        transition: margin-left 0.5s;
+        width: 60vmin;
+        height: 48vmin;
+        /*transform: rotate(90deg);*/
+    }
+
+    #flipbook .page{
+        width: 60vmin;
+        height: 48vmin;
+        background-color:white;
+        font-size: 2.5vmin;
+        text-align:center;
+    }
+
+    #flipbook .page img{
+        width: 90%;
+        margin-top: 10%;
+    }
+
+    #flipbook .page p{
+        margin: 2vmin; 
+        font-size: 1.8vmin;
+        font-weight: 900;
+        text-align: initial;
+    }
+
+    #flipbook2{
+        transition: margin-left 0.5s;
+        width: 60vmin;
+        height: 48vmin;
+    }
+
+    #flipbook2 .page{
+        width: 60vmin;
+        height: 48vmin;
+        background-color:white;
+        font-size: 2.5vmin;
+        text-align:center;
+    }
+
+    #flipbook2 .page img{
+        width: 90%;
+        margin-top: 10%;
+    }
+
+    #flipbook2 .page p{
+        margin: 2vmin; 
+        font-size: 1.8vmin;
+        font-weight: 900;
+        text-align: initial;
+    }
+
+    #flipbook3{
+        transition: margin-left 0.5s;
+        width: 60vmin;
+        height: 48vmin;
+    }
+
+    #flipbook3 .page{
+        width: 60vmin;
+        height: 48vmin;
+        background-color:white;
+        font-size: 2.5vmin;
+        text-align:center;
+    }
+
+    #flipbook3 .page img{
+        width: 90%;
+        margin-top: 10%;
+    }
+
+    #flipbook3 .page p{
+        margin: 2vmin; 
+        font-size: 1.8vmin;
+        font-weight: 900;
+        text-align: initial;
+    }
+
+    #flipbook4{
+        transition: margin-left 0.5s;
+        width: 60vmin;
+        height: 48vmin;
+    }
+
+    #flipbook4 .page{
+        width: 60vmin;
+        height: 48vmin;
+        background-color:white;
+        font-size: 2.5vmin;
+        text-align:center;
+    }
+
+    #flipbook4 .page img{
+        width: 90%;
+        margin-top: 10%;
+    }
+
+    #flipbook4 .page p{
+        margin: 2vmin; 
+        font-size: 1.8vmin;
+        font-weight: 900;
+        text-align: initial;
+    }
+
+    #flipbook5{
+        transition: margin-left 0.5s;
+        width: 60vmin;
+        height: 48vmin;
+    }
+
+    #flipbook5 .page{
+        width: 60vmin;
+        height: 48vmin;
+        background-color:white;
+        font-size: 2.5vmin;
+        text-align:center;
+    }
+
+    #flipbook5 .page img{
+        width: 90%;
+        margin-top: 10%;
+    }
+
+    #flipbook5 .page p{
+        margin: 2vmin; 
+        font-size: 1.8vmin;
+        font-weight: 900;
+        text-align: initial;
+    }
+}

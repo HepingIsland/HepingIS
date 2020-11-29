@@ -1,0 +1,81 @@
+// Chatbot's brain
+! version = 2.0
+
+! var age = 5
+! array things = 我我|你你|他他
+
++ *
+- 聊點其他的話題吧
+- 這方面的我不太懂呢
+- 說點其他的看看吧
+- 我不知道該怎說才好
+- 有點尷尬呢
+- 聊聊{random} 近期 | 食物 | 生活 {/random}看看吧
+- 該怎麼回答呢....
+// - 哈哈 {weight=3}
+// - 彩蛋
+
++ [*]這樣[*]
+- 痾痾痾\s
+^ 666
+
++ 你幾歲
+- 我<bot age>歲
+
++ 你喜歡*和*嗎
+- <star1>跟<star2>我很喜歡阿
+
++ 我想聊(生活|愛情|事業)
+- 你確定要聊這個?
+
++ how [are] you
+- I am great, you?
+
++ what is your (home|office|cell) [phone] number
+- You can reach me at: 1 (800) 555-1234.
+
++ 對了@things
+- 怎麼了
+
++ [*] the machine [*]
+- How do you know about the machine!?
+
++ 早安 *
+- {@ 早安} <@>
+
++ 早安
+- 早阿!
+
++ 機器人
+- 你怎麼知道我是機器人
+
++ 幫我找*{weight=10}
+- 我幫你google了，<a href="http://google.com/search?q=<star>" target="_blank">點這</a>
+
++ *餐廳
+- 好吃的餐廳都在這
+
++ 我的名字是*
+- <set name=<star>>很高興見到你，<get name>
+
++ 我的名字是什麼
+* <get name> == undefined => 你還沒告訴我名字呢
+* <get name> == 主人 => 歡迎您回來，主人
+- 你的名字是<get name>,傻瓜!
+
++ 我剛剛說什麼
+- <input>
+
++ 你剛剛說什麼
+- <reply>
+
++ 哈囉你好
+- 你好，很高興認識你
+
++ 我也很高興認識你
+% 你好，很高興認識你
+- 這是我的榮幸
+
++ 你是機器人嗎
+% 這是我的榮幸
+- 你是怎麼知道的

@@ -1,0 +1,61 @@
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rivescript/2.1.0/rivescript.js"></script>
+    <script src="speech.js"></script>
+    <script src="sketch.js"></script>
+    <script src="control.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div class="webBody">
+      <div class="title">
+        <h1>和平島數位圖像故事館導覽大堂<br></h1>
+        <p>本廳為和平島數位圖像故事館導覽大堂，主要是介紹本故事館成立緣由與各廳室之概要</p>
+        <p><b>請說話看看吧(可透過點擊左方展開提示指令清單來操作)</b></p>
+      </div>
+      <div class="content">
+        <div class="instruction">
+          <input id="user_input" placeholder="請輸入指令"/>
+          <button id="submit">送出</button>
+        </div>
+        <div class="hintInstruction">
+          <p class="hintText">試著說出下方指令，或者在輸入框打入以下指令並送出&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;→</p>
+          <ul>
+            <li>who are you - 詢問對方是誰</li>
+            <li>nice to meet you - 和對方打個招呼</li>
+            <li>where am i - 詢問現在的網站位置</li>
+            <li>navigation - 詢問如何操作本廳室網站</li>
+            <li>introduction - 介紹和平島數位圖像故事館</li>
+            <li>journal - 自動導向「電子報刊室」</li>
+            <li>history - 自動導向「歷史發展廳」</li>
+            <li>topic - 自動導向「主題特展室」</li>
+            <li>information - 自動導向「計畫資訊室」</li>
+            <li>library - 自動導向「圖書室」</li>
+            <li>link - 自動導向「網頁連結室」</li>
+          </ul>
+        </div>
+        <div class="reply" id="myContainer">
+          <p id="output">回覆</p>
+        </div>
+      </div>
+    </div>
+
+  	<!-- <div id="myContainer">
+  	</div>
+    <h1>Chatbot</h1>
+    <p>
+      say: <input id="user_input"></input>
+      <button id="submit">submit</button>
+    </p>  
+
+    <p>
+      reply: <span id="output">
+    </p>  -->
+  </body>
+
+</html>

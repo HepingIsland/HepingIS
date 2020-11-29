@@ -1,0 +1,57 @@
+// Chatbot's brain
+! version = 2.0
+
+// ! sub who's = who is
+
+// + *
+// - try saying knock knock
+
+// + [*] knock knock [*]
+// - Who's there?
+
+// + *
+// % who is there
+// - <star1> who
+
+// + *
+// % * who
+// - hahahahahahah
+
+
+//-------------------------------//
+
+// + how are you
+// - 初次見面 請多指教
+
+// + where am i
+// - 你在和平島數位圖像故事館
+
+// + navigation	
+// - 請點選網頁中的廳室進入參觀
+
++ *
+- try saying navigation
+
++ [*] navigation [*]
+- welcomt to heping island story house
+
++ *
+% welcomt to heping island story house
+- <star1> wow that is wonderful
+
++ *
+% * wow that is wonderful
+- Thank for applying
+
+
+//------------------------------------------------------//
+// ! sub what's = what is
+// ! var num = 37555
+
+// + *
+// - 猜個數字(1~100000)
+
+// + #
+// * <star> > <bot num> => 選個小一點的數字吧
+// * <star> < <bot num> => 選個大一點的數字吧
+// * <star> == <bot num> => 你猜中囉!恭喜!!!

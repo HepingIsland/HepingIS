@@ -1,0 +1,85 @@
+// Chatbot's brain
+! version = 2.0
+
++ *
+- 試著點擊左方展開提示文卡並使用看看吧
+
++ who are you
+- 我是您的和平島數位圖像故事館導覽員
+
++ nice to meet you
+- 初次見面 請多指教
+
++ where am i
+- 您現在的位置在和平島數位圖像故事館導覽大堂網站
+
++ navigation	
+- 使用麥克風依照提示文卡說出指令文字看看吧，若無法正常使用，請在網站上方輸入框填入指令文字，並點擊按鈕送出，將會替您進行服務
+
++ introduction
+- 和平島數位圖象故事館，簡稱DMHI，是海洋大學執行教育部USR專案的成果之一，也是推動「和平島國際旅遊島計畫」的資料庫平台
+
++ journal
+- 將替您導向「電子報刊室」，請稍後
+
++ history
+- 將替您導向「歷史發展廳」，請稍後
+
++ topic
+- 將替您導向「主題特展室」，請稍後
+
++ information
+- 將替您導向「計畫資訊室」，請稍後
+
++ library
+- 將替您導向「圖書室」，請稍後
+
++ link
+- 將替您導向「網頁連結室」，請稍後
+
+//-------------------------------//
+
+// + *
+// - try saying navigation
+
+// + [*] navigation [*]
+// - welcomt to story house
+
+// + *
+// % welcomt to story house
+// - <star1> wow that is wonderful
+
+// + *
+// % * wow that is wonderful
+// - Thank for applying
+
+//-------------------------------//
+
+// ! sub who's = who is
+
+// + *
+// - try saying knock knock
+
+// + [*] knock knock [*]
+// - Who's there?
+
+// + *
+// % who is there
+// - <star1> who
+
+// + *
+// % * who
+// - hahahahahahah
+
+
+//------------------------------------------------------//
+// ! sub what's = what is
+// ! var num = 37555
+
+// + *
+// - 猜個數字(1~100000)
+
+// + #
+// * <star> > <bot num> => 選個小一點的數字吧
+// * <star> < <bot num> => 選個大一點的數字吧
+// * <star> == <bot num> => 你猜中囉!恭喜!!!

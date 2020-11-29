@@ -1,0 +1,89 @@
+<html>
+  <head>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rivescript/2.1.0/rivescript.js"></script>
+    <script src="speech.js"></script>
+    <script src="control.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css'>
+  </head>
+  <body>
+    	<div class="LineBlock">
+        <div class="leftBlock">
+          <div class="leftIcon"><i class="fas fa-user"></i></div>
+          <div class="leftIcon leftIcon2"><i class="fas fa-comment-dots"> </i></div>
+          <div class="leftIcon leftIcon3"><i class="fas fa-user-plus"> </i></div>
+          <div class="leftIcon leftIcon4"><i class="fas fa-clock"> </i></div>
+          <div class="leftIcon leftIcon5"><i class="far fa-bookmark"> </i></div>
+          <div class="leftIcon leftIcon6"><i class="fas fa-volume-down"> </i></div>
+          <div class="leftIcon leftIcon7"><i class="fas fa-ellipsis-h"></i></div>
+        </div>
+        <div class="centerBlock">
+          <div class="centerTop">
+            <input type="search" placeholder="搜尋聊天和訊息"/><i class="fas fa-search"></i>
+          </div>
+          <div class="centerMid">
+            <div class="friend">
+              <div class="friendPicture"> </div>
+              <div class="friendTitle">老兄弟</div>
+              <div class="friendHistory">今天要吃飯嗎</div>
+            </div>
+            <div class="friend">
+              <div class="friendPicture"> </div>
+              <div class="friendTitle">我們這一家(6)</div>
+              <div class="friendHistory">你今天幾點回家？</div>
+            </div>
+            <div class="friend">
+              <div class="friendPicture"> </div>
+              <div class="friendTitle">你老闆</div>
+              <div class="friendHistory">明天開會早10會議廳</div>
+            </div>
+            <div class="friend">
+              <div class="friendPicture"> </div>
+              <div class="friendTitle">購物群(232)</div>
+              <div class="friendHistory">振興復甦限時優惠中.....</div>
+            </div>
+            <div class="friend">
+              <div class="friendPicture"> </div>
+              <div class="friendTitle">隔壁老王</div>
+              <div class="friendHistory">?????????</div>
+            </div>
+            <div class="friend">
+              <div class="friendPicture"> </div>
+              <div class="friendTitle">女朋友</div>
+              <div class="friendHistory">我後天想去看電影欸</div>
+            </div>
+            <div class="friend">
+              <div class="friendPicture"> </div>
+              <div class="friendTitle">永遠回憶111班群(42)</div>
+              <div class="friendHistory">他上次說那個超好笑的</div>
+            </div>
+          </div>
+          <div class="centerBottom"></div>
+        </div>
+        <div class="rightBlock">
+          <div class="rightTop">
+            <div class="botTitle">聊天機器人</div>
+            <div class="botIcon botIcon1"><i class="fas fa-volume-down"></i></div>
+            <div class="botIcon botIcon2"><i class="fas fa-external-link-alt"></i></div>
+            <div class="botIcon botIcon3"><i class="fas fa-search"></i></div>
+            <div class="botIcon botIcon4"><i class="fas fa-phone-alt"></i></div>
+            <div class="botIcon botIcon5"><i class="fas fa-poll-h"></i></div>
+            <div class="botIcon botIcon6"><i class="fas fa-ellipsis-v"></i></div>
+          </div>
+          <div class="rightMid">
+            <div class="botChatBlock" id="bbInit"></div>
+            <div class="selfChatBlock" id="sbInit"></div>
+          </div>
+          <div class="rightBottom">
+            <input id="submitInput" placeholder="輸入訊息"/>
+            <div class="inputIcon inputIcon1"><i class="fas fa-paperclip"></i></div>
+            <div class="inputIcon inputIcon2"><i class="far fa-bookmark"></i></div>
+            <div class="inputIcon inputIcon3"><i class="far fa-smile"></i></div>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>

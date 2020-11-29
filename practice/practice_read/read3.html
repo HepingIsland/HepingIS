@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>語音播報功能</title>
+		<style>
+			article {margin: 0 auto;max-width: 800px;text-align: center;}
+			textarea {max-width: 600px;min-width: 200px;width:100%;text-align: left;}
+			button{border-radius: 3px;border: 1px solid #dddddd;height: 30px;width: 80px;cursor: pointer;}
+		</style>
+	</head>
+
+	<body>
+		<article>
+			<h3>語音播報功能：</h3>
+			<p id="p1">
+				基隆在臺灣進出口貿易的歷史上扮演著重要角色，亦為臺灣遠近洋漁業的重心之一。唯隨著貨輪噸數擴增，國際航運型態改變，使基隆港市發展大受影響，濱海社區也因漁業、造船等產業榮景不再，而面臨轉型需要。故基隆港市如何創新與轉型，再現風華，乃為公私部門、在地社群、產學機構等共同所關注。近年來，基隆港市逐漸由國際貿易商港轉型為國際郵輪停泊的海洋觀光旗鑑港，附近濱海社區也逐漸發展海洋觀光、運動休閒活動，反映基隆港市面臨人文發展、產業創新以永續生存的轉型挑戰；此其中，海洋觀光旅遊產業被寄予厚望。然而，基隆雖擁有豐富的海洋自然人文觀光資源，唯據交通部觀光局觀光遊憩據點統計資料，基隆地區在觀光產業上仍有很大的加強空間。歸納當前基隆地區發展的關鍵議題與需求在於：1.國際郵輪旅客的臨岸接待需求；2.基隆港市面臨轉型挑戰；3.當地觀光旅遊產業必須升級；4.沒落濱海社區需要再造活化以助產業升級、永續宜居。
+				<!-- <textarea rows="15" class="_play">測試</textarea> -->
+			</p>
+			<p>
+				<!-- <label>選擇播報語言：</label> -->
+				<!-- <select id="voiceSelect" onchange="play()"></select> -->
+			</p>
+			<button class="_search" onclick="play()">開始</button>
+			<button onclick="resume()">繼續</button>
+			<button onclick="pause()">暂停</button>
+			<button onclick="cancel()">清除</button>
+		</article>
+	</body>
+	
+	<script>
+		if(!('speechSynthesis' in window)) {
+			throw alert("您的瀏覽器不支持")
+		}
+
+		var _play = document.querySelector("._play"),
+			to_speak = window.speechSynthesis,
+			dataName, voiceSelect = document.querySelector("#voiceSelect"),
+			voices = [];
+	
+		var obj = document.getElementById("p1")
+
+		function play() {
+			cancel();
+			to_speak = new SpeechSynthesisUtterance(obj.innerHTML);
+
+			//to_speak.rate = 1.4;// 设置播放语速，范围：0.1 - 10之间
+			/*
+			var selectedOption = voiceSelect.selectedOptions[0].getAttribute('data-name');
+			for(i = 0; i < voices.length; i++) {
+				if(voices[i].name === selectedOption) {
+					to_speak.voice = voices[i];
+				}
+			}
+			*/
+			window.speechSynthesis.speak(to_speak);
+
+		}
+
+		//暂停
+		function pause() {
+			window.speechSynthesis.pause();
+		}
+		//继续播放
+		function resume() {
+			window.speechSynthesis.resume(); //继续
+		}
+		//清除所有语音播报创建的队列
+		function cancel() {
+			window.speechSynthesis.cancel();
+		}
+		//创建选择语言的select标签
+		function populateVoiceList() {
+			voices = speechSynthesis.getVoices();
+			for(i = 0; i < voices.length; i++) {
+				var option = document.createElement('option');
+				option.textContent = voices[i].name + ' (' + voices[i].lang + ')';
+
+				if(voices[i].default) {
+					option.textContent += ' -- DEFAULT';
+				}
+				option.setAttribute('data-lang', voices[i].lang);
+				option.setAttribute('data-name', voices[i].name);
+				voiceSelect.appendChild(option);
+			}
+		}
+
+		setTimeout(function() {
+			populateVoiceList();
+		}, 0)
+	</script>
+
+</html>

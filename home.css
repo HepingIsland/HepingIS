@@ -1,0 +1,209 @@
+*{
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -o-user-select:none;
+    user-select:none;
+    /*border: solid 2px black;*/
+}
+
+html,body{
+    margin: 0;
+    background-image:url(background2.png);
+    background-size: cover;
+    background-position:center;
+    height:100%;
+    margin: 0;
+    padding: 0;
+}
+
+.background{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.wave{
+    position: relative;
+    top:0;
+    left: 0;
+    width: 100% auto;
+    height: 100%;
+    overflow: hidden;
+}
+
+.wave img{
+    position: relative;
+    left: -8%;
+    bottom: -55%;
+    width:120% ;
+    z-index: 1;
+
+}
+.ship{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% ;
+    height: 100%;
+    z-index: 0;
+    -moz-transform:rotate(5deg);
+    -webkit-transform:rotate(5deg);
+    -o-transform:rotate(5deg);
+    -ms-transform:rotate(5deg);
+    transform:rotate(5deg);
+    
+}
+.ship a{
+    position: absolute;
+    height: 100%;
+    width: auto;
+    top: -16%;
+    left: 60%;
+    content: "";
+    -webkit-animation: float 3s infinite;
+    -moz-animation: float 3s infinite;
+    -ms-animation: float 3s infinite;
+    -o-animation: float 3s infinite;
+    animation: float 3s infinite;
+    -webkit-animation-direction: alternate;
+    -moz-animation-direction: alternate;
+    -ms-animation-direction: alternate;
+    -o-animation-direction: alternate;
+    animation-direction: alternate;
+}
+.ship a:hover{
+    animation-play-state:paused;
+    -webkit-animation-play-state:paused;
+}
+.ship img:hover{
+    transform: scale(1.1);
+}
+.ship img{
+    position: relative;
+    height: 100%;
+    width: auto;
+    transition: 0.5s
+}
+@-webkit-keyframes float{
+    0% { transform:translateY(20px);}
+    50% {transform:translateY(50px);}
+    100% {transform:translateY(20px);}
+}
+    
+@-moz-keyframes float{
+    0% { transform:translateY(20px);}
+    50% {transform:translateY(50px);}
+    100% {transform:translateY(20px);}
+}
+    
+@-ms-keyframes float{
+    0% { transform:translateY(20px);}
+    50% {transform:translateY(50px);}
+    100% {transform:translateY(20px);}
+}
+    
+@-o-keyframes float{
+    0% { transform:translateY(20px);}
+    50% {transform:translateY(50px);}
+    100% {transform:translateY(20px);}
+}
+    
+@keyframes float{
+    0% { transform:translateY(30px);}
+    50% {transform:translateY(50px);}
+    100% {transform:translateY(30px);}
+}
+
+
+
+.title{
+    position: absolute;
+    top: 2%;
+    left: 6%;
+   
+    text-align:right;
+    z-index: 2;
+
+    text-shadow:0 1px 0 #ccc, 
+                0 2px 0 #c9c9c9,
+                0 3px 0 #bbb,
+                0 4px 0 #b9b9b9,
+                0 5px 0 #aaa,
+                0 6px 1px rgba(0,0,0,.1),
+                0 0 5px rgba(0,0,0,.1),
+                0 1px 3px rgba(0,0,0,.3),
+                0 3px 5px rgba(0,0,0,.2),
+                0 5px 10px rgba(0,0,0,.25),
+                0 10px 10px rgba(0,0,0,.2),
+                0 20px 20px rgba(0,0,0,.15);
+}
+
+.title1{ 
+    font-size:6em;
+    font-family: 微軟正黑體;
+    font-weight:900;
+}
+
+
+.title2{
+    font-size:6em;
+    font-family:fantasy;
+}
+
+/*
+.button a{
+    position: absolute;
+    color: initial;
+    text-decoration: initial;
+    font-family: 微軟正黑體;
+    font-size: 3em;
+    top: 76%;
+    left: 65%;
+    padding: 1% 2%;
+    z-index: 3;
+    border-radius: 50%;
+    background: url(favicon.png),linear-gradient(90deg,white,aqua);
+    background: url(favicon.png),-webkit-linear-gradient(90deg,white,aqua);
+    background: url(favicon.png),-o-linear-gradient(90deg,white,aqua);
+    background: url(favicon.png),-moz-linear-gradient(90deg,white,aqua);
+    background-size: auto 100%;
+    background-position:center;
+    transition: 0.5s
+}
+
+.button a:hover{
+    transform: scale(1.3);
+}
+*/
+
+
+
+/*
+.bg img {
+    min-height: 100%;
+    min-width: 2000px;
+}
+*/
+
+/*
+@media screen and (max-width: 1000px) {
+    img.bg {
+        left: 50%;
+        margin-left: -500px;
+    }
+}
+*/
+
+
+/*
+    -moz-transform：適用於 firefox 瀏覽器。
+    -webkit-transform：適用於 safari, google chrome,opera 等瀏覽器。
+    -o-transform：適用於 opera 瀏覽器。
+    -ms-transform：適用於 ie 瀏覽器。
+    */
+
+
+
