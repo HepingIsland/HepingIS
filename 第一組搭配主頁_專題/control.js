@@ -55,49 +55,59 @@ $(document).ready(function() {
   function chat(){
     let input = sbMsg;
     console.log(input);
+	if(input.indexOf("生活文化廳")!=-1){
+      setTimeout(function(){
+         window.location = "https://HepingIsland.github.io/HepingIsland/%E7%94%9F%E6%B4%BB%E6%96%87%E5%8C%96%E5%BB%B3_%E5%B0%88%E9%A1%8C/"
+      }, 5000);   
+    }
+    if(input.indexOf("空間景觀廳")!=-1){
+      setTimeout(function(){
+         window.location = "https://HepingIsland.github.io/HepingIsland/%E7%A9%BA%E9%96%93%E6%99%AF%E8%A7%80%E5%BB%B3_%E5%B0%88%E9%A1%8C/"
+      }, 5000);   
+    }
     if(input.indexOf("電子報刊室")!=-1){
       setTimeout(function(){
-         window.location = "https://smallowl0506.github.io/HepingIS/%E9%9B%BB%E5%AD%90%E5%A0%B1%E5%88%8A%E5%AE%A4_%E5%B0%88%E9%A1%8C/dist/"
+         window.location = "https://HepingIsland.github.io/HepingIsland/%E9%9B%BB%E5%AD%90%E5%A0%B1%E5%88%8A%E5%AE%A4_%E5%B0%88%E9%A1%8C/dist/"
       }, 5000);   
     }
     if(input.indexOf("歷史發展廳")!=-1){
       setTimeout(function(){
-         window.location = "https://smallowl0506.github.io/HepingIS/%E6%AD%B7%E5%8F%B2%E7%99%BC%E5%B1%95%E5%BB%B3_%E5%B0%88%E9%A1%8C/dist/"
+         window.location = "https://HepingIsland.github.io/HepingIsland/%E6%AD%B7%E5%8F%B2%E7%99%BC%E5%B1%95%E5%BB%B3_%E5%B0%88%E9%A1%8C/dist/"
       }, 5000);   
     }
     if(input.indexOf("主題特展室")!=-1){
       setTimeout(function(){
-         window.location = "https://smallowl0506.github.io/HepingIS/%E4%B8%BB%E9%A1%8C%E7%89%B9%E5%B1%95%E5%AE%A4_%E5%B0%88%E9%A1%8C/"
+         window.location = "https://HepingIsland.github.io/HepingIsland/%E4%B8%BB%E9%A1%8C%E7%89%B9%E5%B1%95%E5%AE%A4_%E5%B0%88%E9%A1%8C/"
       }, 5000);   
     }
     if(input.indexOf("計畫資訊室")!=-1){
       setTimeout(function(){
-         window.location = "https://smallowl0506.github.io/HepingIS/%E8%A8%88%E7%95%AB%E8%B3%87%E8%A8%8A%E5%AE%A4_%E5%B0%88%E9%A1%8C/"
+         window.location = "https://HepingIsland.github.io/HepingIsland/%E8%A8%88%E7%95%AB%E8%B3%87%E8%A8%8A%E5%AE%A4_%E5%B0%88%E9%A1%8C/"
       }, 5000);   
     }
     if(input.indexOf("圖書室")!=-1){
       setTimeout(function(){
-         window.location = "https://smallowl0506.github.io/HepingIS/%E5%9C%96%E6%9B%B8%E5%AE%A4_%E5%B0%88%E9%A1%8C/"
+         window.location = "https://HepingIsland.github.io/HepingIsland/%E5%9C%96%E6%9B%B8%E5%AE%A4_%E5%B0%88%E9%A1%8C/"
       }, 5000);   
     }
     if(input.indexOf("網頁連結室")!=-1){
       setTimeout(function(){
-         window.location = "https://smallowl0506.github.io/HepingIS/%E7%B6%B2%E9%A0%81%E9%80%A3%E7%B5%90%E5%AE%A4_%E5%B0%88%E9%A1%8C/dist/"
+         window.location = "https://HepingIsland.github.io/HepingIsland/%E7%B6%B2%E9%A0%81%E9%80%A3%E7%B5%90%E5%AE%A4_%E5%B0%88%E9%A1%8C/dist/"
       }, 5000);   
     }
     if(input.indexOf("導覽大堂")!=-1){
       setTimeout(function(){
-         window.location = "https://smallowl0506.github.io/HepingIS/%E5%B0%8E%E8%A6%BD%E5%A4%A7%E5%A0%82_%E5%B0%88%E9%A1%8C/dist/"
+         window.location = "https://HepingIsland.github.io/HepingIsland/%E5%B0%8E%E8%A6%BD%E5%A4%A7%E5%A0%82_%E5%B0%88%E9%A1%8C/dist/"
       }, 5000);   
     }
     if(input.indexOf("首頁")!=-1 || input.indexOf("主頁")!=-1){
       setTimeout(function(){
-         window.location = "https://smallowl0506.github.io/HepingIS/%E7%AC%AC%E4%B8%80%E7%B5%84%E6%90%AD%E9%85%8D%E4%B8%BB%E9%A0%81_%E5%B0%88%E9%A1%8C/"
+         window.location = "https://HepingIsland.github.io/HepingIsland/%E7%AC%AC%E4%B8%80%E7%B5%84%E6%90%AD%E9%85%8D%E4%B8%BB%E9%A0%81_%E5%B0%88%E9%A1%8C/"
       }, 5000);   
     }
     if(input.indexOf("和平島數位圖像故事館")!=-1){
       setTimeout(function(){
-         window.location = "https://smallowl0506.github.io/HepingIS/%E7%AC%AC%E4%B8%80%E7%B5%84%E6%90%AD%E9%85%8D%E4%B8%BB%E9%A0%81_%E5%B0%88%E9%A1%8C/"
+         window.location = "https://HepingIsland.github.io/HepingIsland/%E7%AC%AC%E4%B8%80%E7%B5%84%E6%90%AD%E9%85%8D%E4%B8%BB%E9%A0%81_%E5%B0%88%E9%A1%8C/"
       }, 7000);   
     }
     let reply = bot.reply("local-user",input);
@@ -131,49 +141,59 @@ $(document).ready(function() {
       var input = speechRec.resultString;
     }
     console.log(input);
+	if(input.indexOf("生活文化廳")!=-1){
+      setTimeout(function(){
+         window.location = "https://HepingIsland.github.io/HepingIsland/%E7%94%9F%E6%B4%BB%E6%96%87%E5%8C%96%E5%BB%B3_%E5%B0%88%E9%A1%8C/"
+      }, 5000);   
+    }
+    if(input.indexOf("空間景觀廳")!=-1){
+      setTimeout(function(){
+         window.location = "https://HepingIsland.github.io/HepingIsland/%E7%A9%BA%E9%96%93%E6%99%AF%E8%A7%80%E5%BB%B3_%E5%B0%88%E9%A1%8C/"
+      }, 5000);   
+    }
     if(input.indexOf("電子報刊室")!=-1){
       setTimeout(function(){
-         window.location = "https://smallowl0506.github.io/HepingIS/%E9%9B%BB%E5%AD%90%E5%A0%B1%E5%88%8A%E5%AE%A4_%E5%B0%88%E9%A1%8C/dist/"
+         window.location = "https://HepingIsland.github.io/HepingIsland/%E9%9B%BB%E5%AD%90%E5%A0%B1%E5%88%8A%E5%AE%A4_%E5%B0%88%E9%A1%8C/dist/"
       }, 5000);   
     }
     if(input.indexOf("歷史發展廳")!=-1){
       setTimeout(function(){
-         window.location = "https://smallowl0506.github.io/HepingIS/%E6%AD%B7%E5%8F%B2%E7%99%BC%E5%B1%95%E5%BB%B3_%E5%B0%88%E9%A1%8C/dist/"
+         window.location = "https://HepingIsland.github.io/HepingIsland/%E6%AD%B7%E5%8F%B2%E7%99%BC%E5%B1%95%E5%BB%B3_%E5%B0%88%E9%A1%8C/dist/"
       }, 5000);   
     }
     if(input.indexOf("主題特展室")!=-1){
       setTimeout(function(){
-         window.location = "https://smallowl0506.github.io/HepingIS/%E4%B8%BB%E9%A1%8C%E7%89%B9%E5%B1%95%E5%AE%A4_%E5%B0%88%E9%A1%8C/"
+         window.location = "https://HepingIsland.github.io/HepingIsland/%E4%B8%BB%E9%A1%8C%E7%89%B9%E5%B1%95%E5%AE%A4_%E5%B0%88%E9%A1%8C/"
       }, 5000);   
     }
     if(input.indexOf("計畫資訊室")!=-1){
       setTimeout(function(){
-         window.location = "https://smallowl0506.github.io/HepingIS/%E8%A8%88%E7%95%AB%E8%B3%87%E8%A8%8A%E5%AE%A4_%E5%B0%88%E9%A1%8C/"
+         window.location = "https://HepingIsland.github.io/HepingIsland/%E8%A8%88%E7%95%AB%E8%B3%87%E8%A8%8A%E5%AE%A4_%E5%B0%88%E9%A1%8C/"
       }, 5000);   
     }
     if(input.indexOf("圖書室")!=-1){
       setTimeout(function(){
-         window.location = "https://smallowl0506.github.io/HepingIS/%E5%9C%96%E6%9B%B8%E5%AE%A4_%E5%B0%88%E9%A1%8C/"
+         window.location = "https://HepingIsland.github.io/HepingIsland/%E5%9C%96%E6%9B%B8%E5%AE%A4_%E5%B0%88%E9%A1%8C/"
       }, 5000);   
     }
     if(input.indexOf("網頁連結室")!=-1){
       setTimeout(function(){
-         window.location = "https://smallowl0506.github.io/HepingIS/%E7%B6%B2%E9%A0%81%E9%80%A3%E7%B5%90%E5%AE%A4_%E5%B0%88%E9%A1%8C/dist/"
+         window.location = "https://HepingIsland.github.io/HepingIsland/%E7%B6%B2%E9%A0%81%E9%80%A3%E7%B5%90%E5%AE%A4_%E5%B0%88%E9%A1%8C/dist/"
       }, 5000);   
     }
     if(input.indexOf("導覽大堂")!=-1){
       setTimeout(function(){
-         window.location = "https://smallowl0506.github.io/HepingIS/%E5%B0%8E%E8%A6%BD%E5%A4%A7%E5%A0%82_%E5%B0%88%E9%A1%8C/dist/"
+         window.location = "https://HepingIsland.github.io/HepingIsland/%E5%B0%8E%E8%A6%BD%E5%A4%A7%E5%A0%82_%E5%B0%88%E9%A1%8C/dist/"
       }, 5000);   
     }
     if(input.indexOf("首頁")!=-1 || input.indexOf("主頁")!=-1){
       setTimeout(function(){
-         window.location = "https://smallowl0506.github.io/HepingIS/%E7%AC%AC%E4%B8%80%E7%B5%84%E6%90%AD%E9%85%8D%E4%B8%BB%E9%A0%81_%E5%B0%88%E9%A1%8C/"
+         window.location = "https://HepingIsland.github.io/HepingIsland/%E7%AC%AC%E4%B8%80%E7%B5%84%E6%90%AD%E9%85%8D%E4%B8%BB%E9%A0%81_%E5%B0%88%E9%A1%8C/"
       }, 5000);   
     }
     if(input.indexOf("和平島數位圖像故事館")!=-1){
       setTimeout(function(){
-         window.location = "https://smallowl0506.github.io/HepingIS/%E7%AC%AC%E4%B8%80%E7%B5%84%E6%90%AD%E9%85%8D%E4%B8%BB%E9%A0%81_%E5%B0%88%E9%A1%8C/"
+         window.location = "https://HepingIsland.github.io/HepingIsland/%E7%AC%AC%E4%B8%80%E7%B5%84%E6%90%AD%E9%85%8D%E4%B8%BB%E9%A0%81_%E5%B0%88%E9%A1%8C/"
       }, 7000);   
     }
     sbMsg = input
